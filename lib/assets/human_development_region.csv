@@ -1,0 +1,8 @@
+hdindex,region,human_development_index,life_expectancy_at_birth,expected_education_years,mean_education,gni_capita,giiindex
+1,Arab States,0.686,70.6,12,6.4,"15,722",0.537
+2,East Asia and the Pacific,0.71,74,12.7,7.5,"11,449",0.328
+3,Europe and Central Asia,0.748,72.3,13.6,10,"12,791",0.3
+4,Latin America and the Caribbean,0.748,75,14,8.2,"14,242",0.415
+5,South Asia,0.607,68.4,11.2,5.5,"5,605",0.536
+6,Sub-Saharan Africa,0.518,58.5,9.6,5.2,"3,363",0.575
+7,World,0.711,71.5,12.2,7.9,"14,301",0.449
