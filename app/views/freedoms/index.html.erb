@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Freedoms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Iso code</th>
+      <th>Region</th>
+      <th>Year</th>
+      <th>Pf rol</th>
+      <th>Pf ss</th>
+      <th>Pf movement</th>
+      <th>Pf religion</th>
+      <th>Pf association</th>
+      <th>Pf expression</th>
+      <th>Pf identity</th>
+      <th>Ef government</th>
+      <th>Ef legal</th>
+      <th>Ef money</th>
+      <th>Ef trade</th>
+      <th>Ef regulation</th>
+      <th>Pf score</th>
+      <th>Pf rank</th>
+      <th>Ef score</th>
+      <th>Ef rank</th>
+      <th>Hf score</th>
+      <th>Hf rank</th>
+      <th>Hf quartile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @freedoms.each do |freedom| %>
+      <tr>
+        <td><%= freedom.country %></td>
+        <td><%= freedom.ISO_code %></td>
+        <td><%= freedom.region %></td>
+        <td><%= freedom.year %></td>
+        <td><%= freedom.pf_rol %></td>
+        <td><%= freedom.pf_ss %></td>
+        <td><%= freedom.pf_movement %></td>
+        <td><%= freedom.pf_religion %></td>
+        <td><%= freedom.pf_association %></td>
+        <td><%= freedom.pf_expression %></td>
+        <td><%= freedom.pf_identity %></td>
+        <td><%= freedom.ef_government %></td>
+        <td><%= freedom.ef_legal %></td>
+        <td><%= freedom.ef_money %></td>
+        <td><%= freedom.ef_trade %></td>
+        <td><%= freedom.ef_regulation %></td>
+        <td><%= freedom.pf_score %></td>
+        <td><%= freedom.pf_rank %></td>
+        <td><%= freedom.ef_score %></td>
+        <td><%= freedom.ef_rank %></td>
+        <td><%= freedom.hf_score %></td>
+        <td><%= freedom.hf_rank %></td>
+        <td><%= freedom.hf_quartile %></td>
+        <td><%= link_to 'Show', freedom %></td>
+        <td><%= link_to 'Edit', edit_freedom_path(freedom) %></td>
+        <td><%= link_to 'Destroy', freedom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Freedom', new_freedom_path %>

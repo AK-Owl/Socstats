@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'grayscale/index'
+  resources :freedoms
   get 'home/index'
 
   root 'home#index'

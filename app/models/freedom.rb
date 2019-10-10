@@ -1,0 +1,2 @@
+class Freedom < ApplicationRecord
+end

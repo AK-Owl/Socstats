@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country: MyString
+  ISO_code: MyString
+  region: MyString
+  year: 1
+  pf_rol: 1.5
+  pf_ss: 1.5
+  pf_movement: 1.5
+  pf_religion: 1.5
+  pf_association: 1.5
+  pf_expression: 1.5
+  pf_identity: 1.5
+  ef_government: 1.5
+  ef_legal: 1.5
+  ef_money: 1.5
+  ef_trade: 1.5
+  ef_regulation: 1.5
+  pf_score: 1.5
+  pf_rank: 1
+  ef_score: 1.5
+  ef_rank: 1
+  hf_score: 1
+  hf_rank: 1
+  hf_quartile: 1
+
+two:
+  country: MyString
+  ISO_code: MyString
+  region: MyString
+  year: 1
+  pf_rol: 1.5
+  pf_ss: 1.5
+  pf_movement: 1.5
+  pf_religion: 1.5
+  pf_association: 1.5
+  pf_expression: 1.5
+  pf_identity: 1.5
+  ef_government: 1.5
+  ef_legal: 1.5
+  ef_money: 1.5
+  ef_trade: 1.5
+  ef_regulation: 1.5
+  pf_score: 1.5
+  pf_rank: 1
+  ef_score: 1.5
+  ef_rank: 1
+  hf_score: 1
+  hf_rank: 1
+  hf_quartile: 1
