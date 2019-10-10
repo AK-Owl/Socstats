@@ -52,3 +52,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# This gem provides:
+#jQuery 1, 2 and 3
+#the jQuery UJS adapter
+#assert_select_jquery to test jQuery responses in Ruby tests
+gem 'jquery-rails'
+
+# a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass'
