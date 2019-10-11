@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'grayscale/index'
+  resources :developmentbyregions
+  resources :developments
   resources :freedoms
   get 'home/index'
   get 'analysis/index'

@@ -10,7 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_10_155629) do
+ActiveRecord::Schema.define(version: 2019_10_11_084556) do
+
+  create_table "developmentbyregions", force: :cascade do |t|
+    t.integer "hdindex"
+    t.string "region"
+    t.float "human_development_index"
+    t.float "life_expectancy_at_birth"
+    t.float "expected_education_years"
+    t.float "mean_education"
+    t.float "gni_capita"
+    t.integer "giiindex"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "developments", force: :cascade do |t|
+    t.integer "hdi_rank"
+    t.string "country"
+    t.float "human_development_index"
+    t.float "life_expectancy_at_birth"
+    t.float "expected_education_years"
+    t.float "mean_education"
+    t.float "gni_capita"
+    t.integer "gni_capita_minus_hdi_rank"
+    t.integer "gii_rank"
+    t.integer "giiindex"
+    t.integer "freedom_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["freedom_id"], name: "index_developments_on_freedom_id"
+  end
 
   create_table "freedoms", force: :cascade do |t|
     t.string "country"
@@ -40,4 +70,5 @@ ActiveRecord::Schema.define(version: 2019_10_10_155629) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "developments", "freedoms"
 end

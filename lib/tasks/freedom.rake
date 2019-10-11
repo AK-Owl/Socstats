@@ -35,5 +35,4 @@ namespace :freedom do
       )
     end
   end
-
 end

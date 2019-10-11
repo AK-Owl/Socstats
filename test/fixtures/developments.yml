@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hdi_rank: 1
+  country: MyString
+  human_development_index: 1.5
+  life_expectancy_at_birth: 1.5
+  expected_education_years: 1.5
+  mean_education: 1.5
+  gni_capita: 1.5
+  gni_capita_minus_hdi_rank: 1
+  gii_rank: 1
+  giiindex: 1
+  freedom: one
+
+two:
+  hdi_rank: 1
+  country: MyString
+  human_development_index: 1.5
+  life_expectancy_at_birth: 1.5
+  expected_education_years: 1.5
+  mean_education: 1.5
+  gni_capita: 1.5
+  gni_capita_minus_hdi_rank: 1
+  gii_rank: 1
+  giiindex: 1
+  freedom: two

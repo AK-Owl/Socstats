@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Developments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hdi rank</th>
+      <th>Country</th>
+      <th>Human development index</th>
+      <th>Life expectancy at birth</th>
+      <th>Expected education years</th>
+      <th>Mean education</th>
+      <th>Gni capita</th>
+      <th>Gni capita minus hdi rank</th>
+      <th>Gii rank</th>
+      <th>Giiindex</th>
+      <th>Freedom Linked Country</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @developments.each do |development| %>
+      <tr>
+        <td><%= development.hdi_rank %></td>
+        <td><%= development.country %></td>
+        <td><%= development.human_development_index %></td>
+        <td><%= development.life_expectancy_at_birth %></td>
+        <td><%= development.expected_education_years %></td>
+        <td><%= development.mean_education %></td>
+        <td><%= development.gni_capita %></td>
+        <td><%= development.gni_capita_minus_hdi_rank %></td>
+        <td><%= development.gii_rank %></td>
+        <td><%= development.giiindex %></td>
+        <td><%= development.freedom.country %></td>
+        <td><%= link_to 'Show', development %></td>
+        <td><%= link_to 'Edit', edit_development_path(development) %></td>
+        <td><%= link_to 'Destroy', development, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Development', new_development_path %>
