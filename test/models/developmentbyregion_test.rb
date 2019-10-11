@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DevelopmentByRegionTest < ActiveSupport::TestCase
+class DevelopmentbyregionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

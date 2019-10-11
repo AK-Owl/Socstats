@@ -1,10 +1,10 @@
-<%= form_with(model: development_by_region, local: true) do |form| %>
-  <% if development_by_region.errors.any? %>
+<%= form_with(model: developmentbyregion, local: true) do |form| %>
+  <% if developmentbyregion.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(development_by_region.errors.count, "error") %> prohibited this development_by_region from being saved:</h2>
+      <h2><%= pluralize(developmentbyregion.errors.count, "error") %> prohibited this developmentbyregion from being saved:</h2>
 
       <ul>
-        <% development_by_region.errors.full_messages.each do |message| %>
+        <% developmentbyregion.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>

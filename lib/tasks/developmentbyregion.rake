@@ -1,20 +1,13 @@
-namespace :development_by_region do
-  desc "TODO"
-  task seed_development_by_region: :environment do
-  end
-
-end
-
 require 'csv'
-namespace :development_by_region do
+namespace :developmentbyregion do
   desc "pull Human Development index by region index data into database"
-  task seed_development_by_region: :environment do
+  task seed_developmentbyregion: :environment do
     #drops the previous data when we import new data
-    Development_by_region.destroy_all
+    Developmentbyregion.destroy_all
 
     CSV.foreach("lib/assets/human_development_region.csv", :headers => true) do |row|
       puts row.inspect
-           Development_by_region.create!(
+           Developmentbyregion.create!(
             hdindex: row[0].to_i,
             region: row[1],
             human_development_index: row[2].to_f,

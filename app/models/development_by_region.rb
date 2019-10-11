@@ -1,2 +1,0 @@
-class DevelopmentByRegion < ApplicationRecord
-end

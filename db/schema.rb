@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_11_065238) do
+ActiveRecord::Schema.define(version: 2019_10_11_084556) do
 
-  create_table "development_by_regions", force: :cascade do |t|
+  create_table "developmentbyregions", force: :cascade do |t|
     t.integer "hdindex"
     t.string "region"
     t.float "human_development_index"
@@ -70,5 +70,6 @@ ActiveRecord::Schema.define(version: 2019_10_11_065238) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "development_countries", "freedoms"
   add_foreign_key "developments", "freedoms"
 end

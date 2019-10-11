@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :development_by_regions
+  resources :developmentbyregions
   resources :developments
   resources :freedoms
   get 'home/index'

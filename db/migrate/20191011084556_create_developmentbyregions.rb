@@ -1,6 +1,6 @@
-class CreateDevelopmentByRegions < ActiveRecord::Migration[6.0]
+class CreateDevelopmentbyregions < ActiveRecord::Migration[6.0]
   def change
-    create_table :development_by_regions do |t|
+    create_table :developmentbyregions do |t|
       t.integer :hdindex
       t.string :region
       t.float :human_development_index
