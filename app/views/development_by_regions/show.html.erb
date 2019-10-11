@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hdindex:</strong>
+  <%= @development_by_region.hdindex %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @development_by_region.region %>
+</p>
+
+<p>
+  <strong>Human development index:</strong>
+  <%= @development_by_region.human_development_index %>
+</p>
+
+<p>
+  <strong>Life expectancy at birth:</strong>
+  <%= @development_by_region.life_expectancy_at_birth %>
+</p>
+
+<p>
+  <strong>Expected education years:</strong>
+  <%= @development_by_region.expected_education_years %>
+</p>
+
+<p>
+  <strong>Mean education:</strong>
+  <%= @development_by_region.mean_education %>
+</p>
+
+<p>
+  <strong>Gni capita:</strong>
+  <%= @development_by_region.gni_capita %>
+</p>
+
+<p>
+  <strong>Giiindex:</strong>
+  <%= @development_by_region.giiindex %>
+</p>
+
+<%= link_to 'Edit', edit_development_by_region_path(@development_by_region) %> |
+<%= link_to 'Back', development_by_regions_path %>

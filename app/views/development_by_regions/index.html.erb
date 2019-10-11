@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Development By Regions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hdindex</th>
+      <th>Region</th>
+      <th>Human development index</th>
+      <th>Life expectancy at birth</th>
+      <th>Expected education years</th>
+      <th>Mean education</th>
+      <th>Gni capita</th>
+      <th>Giiindex</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @development_by_regions.each do |development_by_region| %>
+      <tr>
+        <td><%= development_by_region.hdindex %></td>
+        <td><%= development_by_region.region %></td>
+        <td><%= development_by_region.human_development_index %></td>
+        <td><%= development_by_region.life_expectancy_at_birth %></td>
+        <td><%= development_by_region.expected_education_years %></td>
+        <td><%= development_by_region.mean_education %></td>
+        <td><%= development_by_region.gni_capita %></td>
+        <td><%= development_by_region.giiindex %></td>
+        <td><%= link_to 'Show', development_by_region %></td>
+        <td><%= link_to 'Edit', edit_development_by_region_path(development_by_region) %></td>
+        <td><%= link_to 'Destroy', development_by_region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Development By Region', new_development_by_region_path %>
