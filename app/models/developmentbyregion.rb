@@ -1,0 +1,2 @@
+class Developmentbyregion < ApplicationRecord
+end

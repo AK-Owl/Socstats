@@ -1,0 +1,57 @@
+<%= form_with(model: developmentbyregion, local: true) do |form| %>
+  <% if developmentbyregion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(developmentbyregion.errors.count, "error") %> prohibited this developmentbyregion from being saved:</h2>
+
+      <ul>
+        <% developmentbyregion.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :hdindex %>
+    <%= form.number_field :hdindex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :human_development_index %>
+    <%= form.text_field :human_development_index %>
+  </div>
+
+  <div class="field">
+    <%= form.label :life_expectancy_at_birth %>
+    <%= form.text_field :life_expectancy_at_birth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expected_education_years %>
+    <%= form.text_field :expected_education_years %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mean_education %>
+    <%= form.text_field :mean_education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gni_capita %>
+    <%= form.text_field :gni_capita %>
+  </div>
+
+  <div class="field">
+    <%= form.label :giiindex %>
+    <%= form.number_field :giiindex %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

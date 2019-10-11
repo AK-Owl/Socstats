@@ -1,0 +1,132 @@
+<%= form_with(model: freedom, local: true) do |form| %>
+  <% if freedom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(freedom.errors.count, "error") %> prohibited this freedom from being saved:</h2>
+
+      <ul>
+        <% freedom.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ISO_code %>
+    <%= form.text_field :ISO_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_rol %>
+    <%= form.text_field :pf_rol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_ss %>
+    <%= form.text_field :pf_ss %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_movement %>
+    <%= form.text_field :pf_movement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_religion %>
+    <%= form.text_field :pf_religion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_association %>
+    <%= form.text_field :pf_association %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_expression %>
+    <%= form.text_field :pf_expression %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_identity %>
+    <%= form.text_field :pf_identity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_government %>
+    <%= form.text_field :ef_government %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_legal %>
+    <%= form.text_field :ef_legal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_money %>
+    <%= form.text_field :ef_money %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_trade %>
+    <%= form.text_field :ef_trade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_regulation %>
+    <%= form.text_field :ef_regulation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_score %>
+    <%= form.text_field :pf_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pf_rank %>
+    <%= form.number_field :pf_rank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_score %>
+    <%= form.text_field :ef_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ef_rank %>
+    <%= form.number_field :ef_rank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hf_score %>
+    <%= form.number_field :hf_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hf_rank %>
+    <%= form.number_field :hf_rank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hf_quartile %>
+    <%= form.number_field :hf_quartile %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
