@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_10_11_084556) do
 
-  create_table "developmentbyregions", force: :cascade do |t|
+   create_table "developmentbyregions", force: :cascade do |t|
     t.integer "hdindex"
     t.string "region"
     t.float "human_development_index"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_084556) do
     t.float "expected_education_years"
     t.float "mean_education"
     t.float "gni_capita"
-    t.integer "giiindex"
+    t.float "giiindex"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_084556) do
     t.float "gni_capita"
     t.integer "gni_capita_minus_hdi_rank"
     t.integer "gii_rank"
-    t.integer "giiindex"
+    t.float "giiindex"
     t.integer "freedom_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_084556) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "development_countries", "freedoms"
   add_foreign_key "development_countries", "freedoms"
   add_foreign_key "developments", "freedoms"
 end
