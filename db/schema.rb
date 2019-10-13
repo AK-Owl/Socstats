@@ -70,7 +70,5 @@ ActiveRecord::Schema.define(version: 2019_10_11_084556) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "development_countries", "freedoms"
-  add_foreign_key "development_countries", "freedoms"
   add_foreign_key "developments", "freedoms"
 end

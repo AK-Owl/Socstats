@@ -1,18 +1,21 @@
 <p id="notice"><%= notice %></p>
+<h2>Human development of <%= @development.country%> in 2015 </h2>
+<h4>Development depends on the freedom index of the country</h4>
+
 
 <p>
-  <strong>Hdi rank:</strong>
+  <strong>Human Development Index (HDI):</strong>
+  <%= @development.human_development_index %>
+</p>
+
+<p>
+  <strong>Human Development Index Rank:</strong>
   <%= @development.hdi_rank %>
 </p>
 
 <p>
-  <strong>Country:</strong>
-  <%= @development.country %>
-</p>
-
-<p>
-  <strong>Human development index:</strong>
-  <%= @development.human_development_index %>
+  <strong>Country Human Freedom Index Rank:</strong>
+  <%= @development.freedom.hf_rank%>
 </p>
 
 <p>
@@ -21,39 +24,37 @@
 </p>
 
 <p>
-  <strong>Expected education years:</strong>
+  <strong>Expected Years of Education:</strong>
   <%= @development.expected_education_years %>
 </p>
 
 <p>
-  <strong>Mean education:</strong>
+  <strong>Mean Years of Education:</strong>
   <%= @development.mean_education %>
 </p>
 
 <p>
-  <strong>Gni capita:</strong>
+  <strong>Gross National Income (GNI) per Capita:</strong>
   <%= @development.gni_capita %>
 </p>
 
 <p>
-  <strong>Gni capita minus hdi rank:</strong>
+  <strong>GNI per Capita minus HDI Rank:</strong>
   <%= @development.gni_capita_minus_hdi_rank %>
 </p>
 
 <p>
-  <strong>Gii rank:</strong>
-  <%= @development.gii_rank %>
-</p>
-
-<p>
-  <strong>Giiindex:</strong>
+  <strong>Gender Inequality Index (GII):</strong>
   <%= @development.giiindex %>
 </p>
 
+
 <p>
-  <strong>Freedom:</strong>
-  <%= @development.freedom_id %>
+  <strong>Rank based on Gender Inequility Index:</strong>
+  <%= @development.gii_rank %>
 </p>
 
-<%= link_to 'Edit', edit_development_path(@development) %> |
+
+
 <%= link_to 'Back', developments_path %>
+

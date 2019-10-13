@@ -10,6 +10,10 @@ class FreedomsController < ApplicationController
   # GET /freedoms/1
   # GET /freedoms/1.json
   def show
+    @freedom = Freedom.find(params[:id])
+    @freedomstats = @freedom.pf_rol
+   # @series = [ {name: 'Lily', data: [25]}, {name: 'Tom', data: [27]}, {name: 'Chris', data: [19]} ].to_json
+    #:pf_rol, :pf_ss, :pf_movement, :pf_religion, :pf_association, :pf_expression, :pf_identity, :ef_government, :ef_legal, :ef_money, :ef_trade, :ef_regulation, :pf_score, :ef_score, :hf_score,
   end
 
   # GET /freedoms/new

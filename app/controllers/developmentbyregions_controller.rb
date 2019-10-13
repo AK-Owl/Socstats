@@ -5,7 +5,23 @@ class DevelopmentbyregionsController < ApplicationController
   # GET /developmentbyregions.json
   def index
     @developmentbyregions = Developmentbyregion.all
+    @devregion_hdi = []
+    @devregion_lf = []
+    @devregion_edu = []
+    @devregion_gni = []
+    @devregion_meanedu = []
+    @devregion_gnindex = []
+    @developmentbyregions.each do |index|
+      @devregion_hdi << index.human_development_index
+      @devregion_lf << index.life_expectancy_at_birth
+      @devregion_edu << index.expected_education_years
+      @devregion_meanedu << index.mean_education
+      @devregion_gni  << index.gni_capita
+      @devregion_gnindex << index.giiindex
+    end
   end
+  
+  
 
   # GET /developmentbyregions/1
   # GET /developmentbyregions/1.json

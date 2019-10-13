@@ -5,11 +5,13 @@ class DevelopmentsController < ApplicationController
   # GET /developments.json
   def index
     @developments = Development.all
+    @developmentbyregions = Developmentbyregion.all;
   end
 
   # GET /developments/1
   # GET /developments/1.json
   def show
+    @developmentbyregions = Developmentbyregion.all;
   end
 
   # GET /developments/new

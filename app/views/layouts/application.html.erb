@@ -1,15 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Socstats</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <head> 
+  
+    <!-- This section 1 is from grayscale -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>SocStats</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="http://blackrockdigital.github.io/startbootstrap-grayscale/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom fonts for this template -->
+    <link href="http://blackrockdigital.github.io/startbootstrap-grayscale/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="http://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.min.css" rel="stylesheet">
+
+    <!-- end of the section 1 -->
+
+    <!-- <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> -->
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
 
-  <body>
+  <!--section2 from greyscale/bootstrap -->
+  <body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/grayscale/index#page-top">SocStats</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/analysis/index">Data Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!--end of section2 -->
     <%= yield %>
+
+  <!-- section3 from greyscale -->
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+  <div class="container">
+    Copyright &copy; Spices Team 2019
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/vendor/jquery/jquery.min.js"></script>
+<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/js/grayscale.min.js"></script>
+
+  <!--- end of section3 -->
+
   </body>
+
+
 </html>
