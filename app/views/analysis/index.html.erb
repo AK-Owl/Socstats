@@ -5,12 +5,91 @@
 
      <!-- Featured Project Row -->
      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-       <div class="col-xl-8 col-lg-7">
-         <img class="img-fluid mb-3 mb-lg-0" src="http://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg" alt="">
-       </div>
+       
        <div class="col-xl-4 col-lg-5">
          <div class="featured-text text-center text-lg-left">
-           <h4>Shoreline</h4>
+          <h1>Human Freedom and Development Statistics</h1>
+           <h4></h4>
+           <p id="notice"><%= notice %></p>
+
+          <h5>year 2015, info</h5>
+          <!--W3 Schools  https://www.w3schools.com/howto/howto_js_filter_table.asp-->
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Country">
+          <table id="myTable" >
+            <thead>
+              <tr>
+                <th>Human Development Rank</th>
+                <th>Country</th>
+                <th>Iso code</th>
+                <th>Region</th>
+                <th>Life Expectancy at Birth</th>
+                <th>Expected Years of Education</th>
+                <th>Mean Years of Education</th>
+                <th>Gross National Income (GNI) per Capita</th>
+                <th>GNI per Capita minus HDI Rank</th>
+                <th>Gender Inequality Index (GII)</th>
+                <th>Rank based on Gender Inequility Index</th>
+                <th>Rule of Law</th>
+                <th>Security and Safety</th>
+                <th>Movement</th>
+                <th>Religion</th>
+                <th>Association, Assembly, and Civil Society</th>
+                <th>Expression and Information</th>
+                <th>Identity and Relationships</th>
+                <th>Size of Government</th>
+                <th>Legal System and Property Rights</th>
+                <th>Access to Sound Money</th>
+                <th>Freedom to Trade Internationally</th>
+                <th>Regulation of Credit, Labor, and Business</th>
+                <th>Personal Freedom Score</th>
+                <th>Personal Freedom Rank</th>
+                <th>Economical Freedom Score</th>
+                <th>Economical Freedom Rank</th>
+                <th>Human Freedom Score</th>
+                <th>Human Freemom Index Rank</th>
+                <th>Freedom Quartile</th>
+               
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @developments.each do |development| %>
+                <tr>
+                  <td><%= development.hdi_rank %></td>
+                  <td><%= development.country %></td>
+                  <td><%= development.freedom.ISO_code %></td>
+                  <td><%= development.freedom.region %></td>
+                  <td><%= development.life_expectancy_at_birth %></td>
+                  <td><%= development.expected_education_years %></td>
+                  <td><%= development.mean_education %></td>
+                  <td><%= development.gni_capita %></td>
+                  <td><%= development.gni_capita_minus_hdi_rank %></td>
+                  <td><%= development.giiindex %></td>
+                  <td><%= development.gii_rank %></td>
+                  <td><%= development.freedom.pf_rol %></td>
+                  <td><%= development.freedom.pf_ss %></td>
+                  <td><%= development.freedom.pf_movement %></td>
+                  <td><%= development.freedom.pf_religion %></td>
+                  <td><%= development.freedom.pf_association %></td>
+                  <td><%= development.freedom.pf_expression %></td>
+                  <td><%= development.freedom.pf_identity %></td>
+                  <td><%= development.freedom.ef_government %></td>
+                  <td><%= development.freedom.ef_legal %></td>
+                  <td><%= development.freedom.ef_money %></td>
+                  <td><%= development.freedom.ef_trade %></td>
+                  <td><%= development.freedom.ef_regulation %></td>
+                  <td><%= development.freedom.pf_score %></td>
+                  <td><%= development.freedom.pf_rank  %></td>
+                  <td><%= development.freedom.ef_score %></td>
+                  <td><%= development.freedom.ef_rank %></td>
+                  <td><%= development.freedom.hf_score%></td>
+                  <td><%= development.freedom.hf_rank %></td>
+                  <td><%= development.freedom.hf_quartile %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+          <br>
            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
          </div>
        </div>
@@ -54,6 +133,31 @@
 
    </div>
  </section>
+
+<!-- Reference code was implemented based on www.w3schools.com tutorial on search -->
+<script type="text/javascript">
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 
 
                             Data analysis tools to stay here
