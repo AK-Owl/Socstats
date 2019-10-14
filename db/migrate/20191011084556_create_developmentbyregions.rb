@@ -8,7 +8,7 @@ class CreateDevelopmentbyregions < ActiveRecord::Migration[6.0]
       t.float :expected_education_years
       t.float :mean_education
       t.float :gni_capita
-      t.integer :giiindex
+      t.float :giiindex
 
       t.timestamps
     end

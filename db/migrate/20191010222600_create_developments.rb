@@ -10,7 +10,7 @@ class CreateDevelopments < ActiveRecord::Migration[6.0]
       t.float :gni_capita
       t.integer :gni_capita_minus_hdi_rank
       t.integer :gii_rank
-      t.integer :giiindex
+      t.float :giiindex
       t.references :freedom, null: false, foreign_key: true
 
       t.timestamps

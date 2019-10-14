@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_10_11_084556) do
 
-   create_table "developmentbyregions", force: :cascade do |t|
+  create_table "developmentbyregions", force: :cascade do |t|
     t.integer "hdindex"
     t.string "region"
     t.float "human_development_index"
