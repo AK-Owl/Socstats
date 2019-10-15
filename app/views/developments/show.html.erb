@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<strong><%= link_to 'Back', analysis_index_path %></strong>
+
 <h2>Statistics responsible for Human Freedom and Development of <%= @development.country%> in 2015 </h2>   <p>
 <div id = 'stats'>  
 <table>
@@ -68,7 +68,7 @@ data: [<%= raw @development.freedom.pf_rol%>, <%= raw @development.freedom.pf_ss
 </div>
     
 
-
+<strong><%= link_to 'Back', developments_path %></strong>
 
 <style>
 .stats {

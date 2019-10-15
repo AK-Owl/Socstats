@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   resources :developments
   resources :freedoms
   get 'home/index'
-  get 'analysis/index'
-  get 'analysis/show'
-  get 'analysis/dataanalysis'
+  get 'developments/index'
+  
   root 'home#index'
 
  
