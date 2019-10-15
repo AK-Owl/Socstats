@@ -20,3 +20,6 @@ Rails.application.config.assets.precompile += %w(application.js)
 
 #map.js adding to asset pipeline
 Rails.application.config.assets.precompile += %w(map.js)
+
+#analysis.css adding to asset pipeline
+Rails.application.config.assets.precompile += %w( analysis.css )
