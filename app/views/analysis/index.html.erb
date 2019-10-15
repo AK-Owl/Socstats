@@ -1,4 +1,5 @@
-<br>
+
+<strong><%= link_to 'Analysis', analysis_dataanalysis_path %></strong>
 <br>
 <h1>Human Freedom and Development Statistics</h1>
 <br>
@@ -54,7 +55,7 @@
            <% @developments.each do |development| %>
             <tr>
                   <td><%= development.hdi_rank %></td>
-                  <td><%= development.country %></td>
+                  <td><%= link_to development.country, development %></td>
                   <td><%= development.freedom.ISO_code %></td>
                   <td><%= development.freedom.region %></td>
                   <td><%= development.life_expectancy_at_birth %></td>
