@@ -4,11 +4,12 @@ Rails.application.routes.draw do
   resources :developments
   resources :freedoms
   get 'home/index'
-  get 'analysis/index'
-  get 'analysis/show'
-  get 'analysis/dataanalysis'
+  get 'developments/index'
+  get 'developments/developmentanalysis'
+  
+  get "developmentanalysis" => "developments#developmentanalysis", as: "developmentanalysis"
+
   root 'home#index'
 
- 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
