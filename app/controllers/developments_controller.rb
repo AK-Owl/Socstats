@@ -6,6 +6,8 @@ class DevelopmentsController < ApplicationController
   def index
     @developments = Development.all
     @developmentbyregions = Developmentbyregion.all
+
+  
   end
 
   # GET /developments/1
@@ -20,7 +22,9 @@ class DevelopmentsController < ApplicationController
   end
 
   def developmentanalysis
-    @development = Development.all
+    @development = Development.new
+    
+    
   end
   # GET /developments/1/edit
   def edit
