@@ -1,25 +1,26 @@
-<strong> <%= link_to 'Data Analysis', developmentanalysis_path, class: "btn btn-home"  %></strong>
+
 <br>
 <h1>Human Freedom and Development Statistics</h1>
 <br>
 <!-- Bootstrap core CSS -->
 
-<%= stylesheet_link_tag "custom" %>
-  <link href="app/assets/stylesheets/custom.css" rel="stylesheet">
- 
-  <link href="app/assets/stylesheets/developments.scss" rel="stylesheet">
+   
 <!-- Demo by George Martsoukos. <a href="http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions" -->
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+      <%= stylesheet_link_tag "developments"%>
 
-<div class="container">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
-     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+     
+    
+      <!-- <link href="app/assets/stylesheets/developments.scss" rel="stylesheet"> -->
     <!--  <%= stylesheet_link_tag "application", media: "all" %> -->
-  
 
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="table-responsive">
+<div class="container" style="width:">
+ <!--  <div class="row" > -->
+    <div class="col-xs-12" >
+      <div class="table-responsive" style="max- width:100%; max-height:500px;">
+        <!--<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> -->
+    
         <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
          <!-- <caption class="text-center">An example of a responsive table based on <a href="https://getbootstrap.com/css/#tables-responsive" target="_blank">Bootstrap</a>:</caption> --> 
            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Country">
@@ -103,8 +104,10 @@
         </table>
       </div><!--end of .table-responsive-->
     </div>
-  </div>
+ <!-- </div> -->
 </div>
+
+<br>
 
 
 
@@ -131,3 +134,4 @@ function myFunction() {
   }
 }
 </script>
+

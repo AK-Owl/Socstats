@@ -25,3 +25,5 @@ Rails.application.config.assets.precompile += %w(map.js)
 Rails.application.config.assets.precompile += %w( analysis.css )
 
 Rails.application.config.assets.precompile += %w( grayscale_custom.css )
+
+Rails.application.config.assets.precompile += %w( developments.css )
