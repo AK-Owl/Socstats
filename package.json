@@ -1,7 +1,9 @@
 {
   "name": "socstats",
   "private": true,
+
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.10.2",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
@@ -9,11 +11,20 @@
     "bootstrap": "^3.4.1",
     "highcharts": "^7.2.0",
     "jquery": "^3.4.1",
+    "jquery.easing": "^1.4.1",
     "leaflet": "^1.5.1",
     "turbolinks": "^5.2.0"
   },
+
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.8.2",
+    "browser-sync": "2.26.7",
+    "del": "5.1.0"
+  },
+
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/AliceOwl/Socstats"
   }
 }

@@ -1,0 +1,65 @@
+
+
+// Variables
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #161616 !default;
+
+$primary: #64a19d !default;
+
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  $black: #161616 !default;
+  background: linear-gradient(to bottom, #{fade-out($black, .7)} 0%,#{fade-out($black, .3)} 75%,$black 100%), url('../img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-family: 'Varela Round';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+  @media(min-width: 768px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  @media(min-width: 992px) {
+    height: 100vh;
+    padding: 0;
+    h1 {
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    h2 {
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+}
