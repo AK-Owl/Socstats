@@ -5,14 +5,16 @@
 <!-- Bootstrap core CSS -->
 
 <%= stylesheet_link_tag "custom" %>
-    <link href="app/assets/stylesheets/custom.css" rel="stylesheet">
-  <!-- Demo by George Martsoukos. <a href="http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions" -->
+  <link href="app/assets/stylesheets/custom.css" rel="stylesheet">
+ 
+  <link href="app/assets/stylesheets/developments.scss" rel="stylesheet">
+<!-- Demo by George Martsoukos. <a href="http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions" -->
 
 <div class="container">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
-     <%= stylesheet_link_tag "application", media: "all" %> 
+    <!--  <%= stylesheet_link_tag "application", media: "all" %> -->
   
 
   <div class="row">
@@ -95,7 +97,7 @@
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="5" class="text-center">Data retrieved from <a href="http://www.infoplease.com/ipa/A0855611.html" target="_blank">infoplease</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">worldometers</a>.</td>
+              <td colspan="5" class="text-center">Data retrieved from <a href="https://www.kaggle.com/undp/human-development" target="_blank">Kaggle: Human Developemnt Report (2015)</a> and <a href="https://www.kaggle.com/gsutters/the-human-freedom-index" target="_blank">Kaggle: The Human Freedom Index</a>.</td>
             </tr>
           </tfoot>
         </table>
