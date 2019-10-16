@@ -5,13 +5,13 @@ class DevelopmentsController < ApplicationController
   # GET /developments.json
   def index
     @developments = Development.all
-    @developmentbyregions = Developmentbyregion.all;
+    @developmentbyregions = Developmentbyregion.all
   end
 
   # GET /developments/1
   # GET /developments/1.json
   def show
-    @developmentbyregions = Developmentbyregion.all;
+    @developmentbyregions = Developmentbyregion.all
   end
 
   # GET /developments/new
@@ -19,6 +19,9 @@ class DevelopmentsController < ApplicationController
     @development = Development.new
   end
 
+  def developmentanalysis
+    @development = Development.all
+  end
   # GET /developments/1/edit
   def edit
   end
