@@ -22,9 +22,11 @@ class DevelopmentsController < ApplicationController
   end
 
   def developmentanalysis
-    @development = Development.new
-    
-    
+    @development = Development.all
+    @country1 = Development.find(params[:id1])
+    @country2 = Development.find(params[:id2])
+
+    POST /developments/analysis
   end
   # GET /developments/1/edit
   def edit

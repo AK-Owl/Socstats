@@ -1,4 +1,3 @@
- <h5>Data Analysis</h5>
  <section id="about" class="about-section text-center">
     <div class="container">
       <div class="row">
@@ -7,10 +6,7 @@
           <div class="input-append">
             <%= collection_select :country, :id1, Development.all, :id, :country %>
             <%= collection_select :country, :id2, Development.all, :id, :country %>
-            <%= collection_select :country, :id3, Development.all, :id, :country %>
-            <%= collection_select :country, :id4, Development.all, :id, :country %>
-            <%= collection_select :country, :id5, Development.all, :id, :country %>
-          <button type="submit" class="btn">submit</button>
+       <button type="submit" class="btn">submit</button>
           </div>
         <% end %>
       </div>
