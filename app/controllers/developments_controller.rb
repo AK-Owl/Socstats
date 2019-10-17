@@ -6,6 +6,22 @@ class DevelopmentsController < ApplicationController
   def index
     @developments = Development.all
     @developmentbyregions = Developmentbyregion.all
+    @devregion_hdi = []
+    @devregion_lf = []
+    @devregion_edu = []
+    @devregion_gni = []
+    @devregion_meanedu = []
+    @devregion_gnindex = []
+    @developmentbyregions.each do |index|
+      @devregion_hdi << index.human_development_index
+      @devregion_lf << index.life_expectancy_at_birth
+      @devregion_edu << index.expected_education_years
+      @devregion_meanedu << index.mean_education
+      @devregion_gni  << index.gni_capita
+      @devregion_gnindex << index.giiindex
+    end
+
+  
   end
 
   # GET /developments/1
@@ -21,6 +37,10 @@ class DevelopmentsController < ApplicationController
 
   def developmentanalysis
     @development = Development.all
+   # @country1 = Development.find(params[:id1])
+    #@country2 = Development.find(params[:id2])
+
+    POST developments/analysis
   end
   # GET /developments/1/edit
   def edit
