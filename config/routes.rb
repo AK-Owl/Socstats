@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'developments/index'
   get 'developments/developmentanalysis'
+  get 'developments/analysis'
   
   get "developmentanalysis" => "developments#developmentanalysis", as: "developmentanalysis"
-
+  get 'livedata/index'
   root 'home#index'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

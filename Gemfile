@@ -23,6 +23,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 # Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
 gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
+# Makes http fun! Also, makes consuming restful web services dead easy.
+gem 'httparty', '~> 0.17.1'
+# Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser. Among Nokogiri's many features is the ability to search documents via XPath or CSS3 selectors.
+gem 'nokogiri', '~> 1.10', '>= 1.10.4'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
