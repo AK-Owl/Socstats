@@ -147,13 +147,67 @@
 
 
 
+.header_data {
+  position: relative;
+  width: 100%;
+  min-height: 20rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, #313133 100%), url("img/data_banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.header_data h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.header_data h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .header_data h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header_data {
+    height: 50vh;
+    padding: 0;
+  }
+  .header_data h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .header_data h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+
 .header_analysis {
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 35rem;
+  height: 300px;
+  min-height: 20rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, #313133 100%), url("img/analysi.sjpeg");
+  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, #313133 100%), url("img/analysis.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -187,7 +241,7 @@
 
 @media (min-width: 992px) {
   .header_analysis {
-    height: 100vh;
+    height: 50vh;
     padding: 0;
   }
   .header_analysis h1 {
@@ -200,9 +254,6 @@
     font-size: 1.25rem;
   }
 }
-
-
-
 
 
 
