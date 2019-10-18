@@ -40,7 +40,7 @@ class DevelopmentsController < ApplicationController
    # @country1 = Development.find(params[:id1])
     #@country2 = Development.find(params[:id2])
 
-    POST developments/analysis
+    #POST developments/analysis
   end
   # GET /developments/1/edit
   def edit
