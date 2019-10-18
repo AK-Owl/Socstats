@@ -37,9 +37,6 @@ end
     @development = Development.all
   end
 
-  def analysis 
-    
-  end
   # GET /developments/1/edit
   def edit
   end
