@@ -1,59 +1,79 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Hdi rank:</strong>
-  <%= @development.hdi_rank %>
-</p>
+<h2>Statistics responsible for Human Freedom and Development of <%= @development.country%> in 2015 </h2>   <p>
+<div id = 'stats'>  
+<table>
+  <tr>
+    <th>
+    <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Ranking</h3></div>
+    <div style="order:1;" class="Rtable-cell"><p>  <strong>Iso code:</strong> <%= @development.freedom.ISO_code %></p></div>
+    <div style="order:2;" class="Rtable-cell"><p>  <strong>Region:</strong>  <%= @development.freedom.region %></p></div>
+    <div style="order:3;" class="Rtable-cell"><p>  <strong>Personal Freedom Rank:</strong>  <%= @development.freedom.pf_rank %></p></div>
+    <div style="order:4;" class="Rtable-cell"><p>  <strong>Economical Freedom Rank:</strong> <%= @development.freedom.ef_rank %></p></div>
+    <div style="order:5;" class="Rtable-cell"><p>  <strong>Human Freemom Index Rank:</strong>  <%= @development.freedom.hf_rank %></p></div>
+    <div style="order:6;" class="Rtable-cell"><p>  <strong>Human Development Rank:</strong>  <%=  @development.hdi_rank %></p></div>
+    <div style="order:7;" class="Rtable-cell"><p>  <strong>Gender Inequility Rank:</strong>  <%= @development.gii_rank %></p></div>
+    </th>
+       
+  <th>
+  <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Development Stats</h3></div>
+  <div style="order:1;" class="Rtable-cell"><p>  <strong>Freedom Quartile:</strong>  <%= @development.freedom.hf_quartile %></p></div>
+  <div style="order:2;" class="Rtable-cell"><p>  <strong>Human Development Index (HDI):</strong>  <%= @development.human_development_index %></p></div>
+  <div style="order:3;" class="Rtable-cell"><p>  <strong>Life expectancy at birth:</strong>  <%= @development.life_expectancy_at_birth %></p></div>
+  <div style="order:4;" class="Rtable-cell"><p>  <strong>Expected Years of Education:</strong>  <%= @development.expected_education_years %></p></div>
+  <div style="order:5;" class="Rtable-cell"><p>  <strong>Mean Years of Education:</strong>  <%= @development.mean_education %></p></div>
+  <div style="order:6;" class="Rtable-cell"><p>  <strong>Gross National Income (GNI) per Capita:</strong> <%= @development.gni_capita %></p></div>
+  <div style="order:7;" class="Rtable-cell"><p>  <strong>GNI per Capita minus HDI Rank:</strong> <%= @development.gni_capita_minus_hdi_rank %></p></div>
+ 
+    </th>
+  </tr>
+</table>
+</div>
 
-<p>
-  <strong>Country:</strong>
-  <%= @development.country %>
-</p>
 
-<p>
-  <strong>Human development index:</strong>
-  <%= @development.human_development_index %>
-</p>
+<div id="container" style="width:100%;height:400px;">
+<script type="text/javascript">
+$(function () {
+var myChart = Highcharts.chart('container',{
+chart: {
 
-<p>
-  <strong>Life expectancy at birth:</strong>
-  <%= @development.life_expectancy_at_birth %>
-</p>
+},
+title: {
+text: 'Statistics'
+},
+xAxis: {
+categories: ['Rule of Law','Security and Safety','Movement','Religion','Association, Assembly, and Civil Society','Expression and Information','Identity and Relationships',
+'Size of Government','Legal System and Property Rights','Access to Sound Money', 'Freedom to Trade Internationally','Regulation of Credit, Labor, and Business','Personal Freedom Score','Economical Freedom Score','Human Freedom Score']
+},
+yAxis: {
+title: {
+text: 'Scale 0 - 10 (10 - Maximum Freedom)',
+},
+tickInterval:1
+},
+series: [{
+name: 'Statistics',
+type: 'bar',
+data: [<%= raw @development.freedom.pf_rol%>, <%= raw @development.freedom.pf_ss%>, <%= raw @development.freedom.pf_movement%>, <%= raw @development.freedom.pf_religion%>, <%= raw @development.freedom.pf_association%>, 
 
-<p>
-  <strong>Expected education years:</strong>
-  <%= @development.expected_education_years %>
-</p>
+      <%= raw @development.freedom.pf_expression%>, <%= raw @development.freedom.pf_identity%>, <%= raw @development.freedom.ef_government%>, <%= raw @development.freedom.ef_legal%>, <%= raw @development.freedom.ef_money%>,<%= raw @development.freedom.ef_trade%>, 
 
-<p>
-  <strong>Mean education:</strong>
-  <%= @development.mean_education %>
-</p>
+      <%= raw @development.freedom.ef_regulation%>,<%= raw @development.freedom.pf_score%>,<%= raw @development.freedom.ef_score%>,<%= raw @development.freedom.hf_score%>]
 
-<p>
-  <strong>Gni capita:</strong>
-  <%= @development.gni_capita %>
-</p>
+}]
+});
+});
 
-<p>
-  <strong>Gni capita minus hdi rank:</strong>
-  <%= @development.gni_capita_minus_hdi_rank %>
-</p>
+</script>
+</div>
+    
 
-<p>
-  <strong>Gii rank:</strong>
-  <%= @development.gii_rank %>
-</p>
+<strong><%= link_to 'Back', developments_path %></strong>
 
-<p>
-  <strong>Giiindex:</strong>
-  <%= @development.giiindex %>
-</p>
+<style>
+.stats {
+margin: auto;
 
-<p>
-  <strong>Freedom:</strong>
-  <%= @development.freedom_id %>
-</p>
+}
 
-<%= link_to 'Edit', edit_development_path(@development) %> |
-<%= link_to 'Back', developments_path %>
+</style>

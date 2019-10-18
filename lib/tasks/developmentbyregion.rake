@@ -15,7 +15,7 @@ namespace :developmentbyregion do
             expected_education_years: row[4].to_f,
             mean_education: row[5].to_f,
             gni_capita: row[6].to_f,
-            giiindex: row[7].to_i,
+            giiindex: row[7].to_f,
           )
       end
   end

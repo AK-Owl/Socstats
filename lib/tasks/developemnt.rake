@@ -20,7 +20,7 @@ namespace :development do
             gni_capita: row[6].to_f,
             gni_capita_minus_hdi_rank: row[7].to_i,
             gii_rank: row[8].to_i,
-            giiindex: row[9].to_i,
+            giiindex: row[9].to_f,
             freedom_id: index.id
           )
         else

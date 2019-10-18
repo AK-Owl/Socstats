@@ -1,10 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Country:</strong>
-  <%= @freedom.country %>
-</p>
-
+<h3>Human Freedom Index of <%=@freedom.country %> in the year 2015</h3>
 <p>
   <strong>Iso code:</strong>
   <%= @freedom.ISO_code %>
@@ -16,104 +12,62 @@
 </p>
 
 <p>
-  <strong>Year:</strong>
-  <%= @freedom.year %>
-</p>
-
-<p>
-  <strong>Pf rol:</strong>
-  <%= @freedom.pf_rol %>
-</p>
-
-<p>
-  <strong>Pf ss:</strong>
-  <%= @freedom.pf_ss %>
-</p>
-
-<p>
-  <strong>Pf movement:</strong>
-  <%= @freedom.pf_movement %>
-</p>
-
-<p>
-  <strong>Pf religion:</strong>
-  <%= @freedom.pf_religion %>
-</p>
-
-<p>
-  <strong>Pf association:</strong>
-  <%= @freedom.pf_association %>
-</p>
-
-<p>
-  <strong>Pf expression:</strong>
-  <%= @freedom.pf_expression %>
-</p>
-
-<p>
-  <strong>Pf identity:</strong>
-  <%= @freedom.pf_identity %>
-</p>
-
-<p>
-  <strong>Ef government:</strong>
-  <%= @freedom.ef_government %>
-</p>
-
-<p>
-  <strong>Ef legal:</strong>
-  <%= @freedom.ef_legal %>
-</p>
-
-<p>
-  <strong>Ef money:</strong>
-  <%= @freedom.ef_money %>
-</p>
-
-<p>
-  <strong>Ef trade:</strong>
-  <%= @freedom.ef_trade %>
-</p>
-
-<p>
-  <strong>Ef regulation:</strong>
-  <%= @freedom.ef_regulation %>
-</p>
-
-<p>
-  <strong>Pf score:</strong>
-  <%= @freedom.pf_score %>
-</p>
-
-<p>
-  <strong>Pf rank:</strong>
+  <strong>Personal Freedom Rank:</strong>
   <%= @freedom.pf_rank %>
 </p>
 
 <p>
-  <strong>Ef score:</strong>
-  <%= @freedom.ef_score %>
-</p>
-
-<p>
-  <strong>Ef rank:</strong>
+  <strong>Economical Freedom Rank:</strong>
   <%= @freedom.ef_rank %>
 </p>
 
 <p>
-  <strong>Hf score:</strong>
-  <%= @freedom.hf_score %>
-</p>
-
-<p>
-  <strong>Hf rank:</strong>
+  <strong>Human Freemom Index Rank:</strong>
   <%= @freedom.hf_rank %>
 </p>
 
 <p>
-  <strong>Hf quartile:</strong>
+  <strong>Freedom Quartile:</strong>
   <%= @freedom.hf_quartile %>
 </p>
 
-<%= link_to 'Edit', edit_freedom_path(@freedom) %> |
+
+
+<h2>Level of Freedom</h2>
+
+<div id="container" style="width:100%;height:400px;"></div>
+<script type="text/javascript">
+$(function () {
+var myChart = Highcharts.chart('container',{
+chart: {
+
+},
+title: {
+text: 'Statistics responsible for Human Freedom index of <%= @freedom.country%>'
+},
+xAxis: {
+categories: ['Rule of Law','Security and Safety','Movement','Religion','Association, Assembly, and Civil Society','Expression and Information','Identity and Relationships',
+'Size of Government','Legal System and Property Rights','Access to Sound Money', 'Freedom to Trade Internationally','Regulation of Credit, Labor, and Business','Personal Freedom Score','Economical Freedom Score','Human Freedom Score']
+},
+yAxis: {
+title: {
+text: 'Scale 0 - 10 (10 - Maximum Freedom)',
+},
+tickInterval:1
+},
+series: [{
+name: 'Statistics',
+type: 'bar',
+data: [<%= raw @freedom.pf_rol%>, <%= raw @freedom.pf_ss%>, <%= raw @freedom.pf_movement%>, <%= raw @freedom.pf_religion%>, <%= raw @freedom.pf_association%>, 
+
+      <%= raw @freedom.pf_expression%>, <%= raw @freedom.pf_identity%>, <%= raw @freedom.ef_government%>, <%= raw @freedom.ef_legal%>, <%= raw @freedom.ef_money%>,<%= raw @freedom.ef_trade%>, 
+
+      <%= raw @freedom.ef_regulation%>,<%= raw @freedom.pf_score%>,<%= raw @freedom.ef_score%>,<%= raw @freedom.hf_score%>]
+
+}]
+});
+});
+
+</script>
+
 <%= link_to 'Back', freedoms_path %>

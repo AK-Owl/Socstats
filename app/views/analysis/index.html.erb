@@ -1,59 +1,28 @@
 
- <!-- Projects Section -->
- <section id="projects" class="projects-section bg-light">
-   <div class="container">
+  <header class="header_analysis">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Data Analysis</h1>
+      </div>
+    </div>
+  </header>
 
-     <!-- Featured Project Row -->
-     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-       <div class="col-xl-8 col-lg-7">
-         <img class="img-fluid mb-3 mb-lg-0" src="http://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg" alt="">
-       </div>
-       <div class="col-xl-4 col-lg-5">
-         <div class="featured-text text-center text-lg-left">
-           <h4>Shoreline</h4>
-           <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-         </div>
-       </div>
-     </div>
+<section id="analysis" class="analysis-section text-center">
+    <div class="container">
 
-     <!-- Project One Row -->
-     <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-       <div class="col-lg-6">
-         <img class="img-fluid" src="http://blackrockdigital.github.io/startbootstrap-grayscale/img/demo-image-01.jpg" alt="">
-       </div>
-       <div class="col-lg-6">
-         <div class="bg-black text-center h-100 project">
-           <div class="d-flex h-100">
-             <div class="project-text w-100 my-auto text-center text-lg-left">
-               <h4 class="text-white">Misty</h4>
-               <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-               <hr class="d-none d-lg-block mb-0 ml-0">
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
+          <%= form_tag analysis_results_path, :method => :get do |form| %>
+          <div class="input-append">
+            <%= collection_select :country1, :id, Development.all, :country, :country %>
+            <%= collection_select :country2, :id, Development.all, :country, :country %>
+            <%= collection_select :country3, :id, Development.all, :country, :country %>
+            <%= collection_select :country4, :id, Development.all, :country, :country %>
+            <%= collection_select :country5, :id, Development.all, :country, :country %>
 
-     <!-- Project Two Row -->
-     <div class="row justify-content-center no-gutters">
-       <div class="col-lg-6">
-         <img class="img-fluid" src="http://blackrockdigital.github.io/startbootstrap-grayscale/img/demo-image-02.jpg" alt="">
-       </div>
-       <div class="col-lg-6 order-lg-first">
-         <div class="bg-black text-center h-100 project">
-           <div class="d-flex h-100">
-             <div class="project-text w-100 my-auto text-center text-lg-right">
-               <h4 class="text-white">Mountains</h4>
-               <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-               <hr class="d-none d-lg-block mb-0 mr-0">
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
+           <input type="checkbox" name = "all" /> See All Valuess
+            <button type="submit" class="btn">submit</button>
+          </div>
 
-   </div>
- </section>
+        <% end %>
 
-
-                            Data analysis tools to stay here
+    </div>
+</section>
