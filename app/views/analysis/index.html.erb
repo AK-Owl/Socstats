@@ -1,0 +1,17 @@
+
+
+
+<section id="analysis" class="analysis-section text-center">
+    <div class="container">
+
+          <%= form_tag analysis_results_path, :method => :get do  %>
+          <div class="input-append">
+            <%= collection_select :country1, :id, Development.all, :country, :country %>
+            <%= collection_select :country2, :id, Development.all, :country, :country %>
+            <button type="submit" class="btn">submit</button>
+          </div>
+
+        <% end %>
+
+    </div>
+</section>

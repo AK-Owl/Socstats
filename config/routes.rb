@@ -5,9 +5,14 @@ Rails.application.routes.draw do
   resources :freedoms
   get 'home/index'
   get 'developments/index'
-  get 'developments/developmentanalysis'
+  get 'analysis/index'
+  get 'analysis/results'
+
+  #get 'developments/developmentanalysis'
+
+  get 'analysis/results' => 'analysis#results', as: 'analysis'
   
-  get "developmentanalysis" => "developments#developmentanalysis", as: "developmentanalysis"
+  #get "developmentanalysis" => "developments#developmentanalysis", as: "developmentanalysis"
 
   root 'home#index'
 
