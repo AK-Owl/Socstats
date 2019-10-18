@@ -18,7 +18,7 @@ $primary: #64a19d !default;
 
 
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-image: url('img/citty.jpg'); /* Add a search icon to input */
     background-position: 10px 12px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
     width: 100%; /* Full-width */
@@ -49,3 +49,35 @@ $primary: #64a19d !default;
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
   }
+
+
+  /*h1 {
+    text-align: center;
+  }
+
+h2 {
+    text-align: center;
+  }
+  
+  table caption {
+      padding: .5em 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    table caption {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+  .p {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+  }
+
+  .table.id {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+    padding: .5em 0;
+  } */

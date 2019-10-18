@@ -12,7 +12,7 @@ class FreedomsController < ApplicationController
   def show
     @freedom = Freedom.find(params[:id])
     
-    # reference from the rails guides "https://guides.rubyonrails.org/action_controller_overview.html"
+    # reference: from the rails guides "https://guides.rubyonrails.org/action_controller_overview.html"
     respond_to do |pdf_format|
       pdf_format.html
       pdf_format.pdf {render pdf: generate_pdf(@freedom)}
