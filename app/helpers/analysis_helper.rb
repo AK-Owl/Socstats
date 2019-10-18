@@ -1,7 +1,7 @@
 module AnalysisHelper
 
         def analysisdata
-            analysisdata = ("SELECT developments.hdi_rank,
+            analysisdata = connection.execute("SELECT developments.hdi_rank,
             developments.country,
             developments.human_development_index,
             developments.life_expectancy_at_birth,

@@ -20,10 +20,18 @@ def results
     @country4 = params[:country4] [:id]
     @country5 = params[:country5] [:id]
     @all = params[:all]
-    
     @dev = Development.all
     @hfi = Freedom.all
+    @con1 = Development.connection.select_all("SELECT * FROM developments WHERE country = 'Norway'")
+
+    
+
+   
     @data = analysisdata
+
+    @test1 = Development.where(params[:country1] [:id]).all
+
+    
 
     end
 
