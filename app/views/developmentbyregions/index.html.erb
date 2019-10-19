@@ -49,8 +49,54 @@ var myChart = Highcharts.chart('container', {
 });
 
 </script>
-
 </div>
+<div id="container" style="width:100%;height:500px;">
+<script type="text/javascript">
+$(function () {
+var myChart = Highcharts.chart('container', {
+    chart: {
+        type: 'column',
+    },
+    title: {
+        text: 'Human Personal freedom Stats'
+    },
+    plotOptions: {
+        column: {
+            depth: 25
+        }
+    },
+    xAxis: {
+        categories: <%= raw @countries%>
+    },
+    series: [{
+      name: 'Rule of Law',
+      data: <%= raw @pfrol %>
+    },{
+      name: 'Security and Safety',
+      data: <%= raw @pfss%>
+    },{
+      name: 'Moment',
+      data: <%= raw @pfmov %>
+    },{
+      name: 'Religion',
+      data: <%= raw @pfrel %>
+    },{
+      name: 'Association, Assembly, and Civil Society',
+      data: <%= raw @pfass %>
+    },{
+      name: 'Expression and Information',
+      data: <%= raw @pfexp %>
+    },{
+      name: 'Identity and Relationships',
+      data: <%= raw @pdid %>
+    }]
+});
+});
+
+</script>
+</div>
+
+
 <%= link_to 'Back', developments_path %>
 
 

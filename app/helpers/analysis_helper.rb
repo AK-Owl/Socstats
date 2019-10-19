@@ -35,7 +35,7 @@ module AnalysisHelper
             FROM developments, freedoms 
             WHERE developments.country = freedoms.country 
             AND 
-            developments.country IN (@country1, @country2, @country3, @country4, @country5)")
+            developments.country IN (country1, country2, country3, country4, country5)")
             return analysisdata
         end
 

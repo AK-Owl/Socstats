@@ -1,8 +1,9 @@
 {
   "name": "socstats",
   "private": true,
-
   "dependencies": {
+    "@amcharts/amcharts4": "^4.7.3",
+    "@amcharts/amcharts4-geodata": "^4.1.7",
     "@fortawesome/fontawesome-free": "5.10.2",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
@@ -15,16 +16,14 @@
     "leaflet": "^1.5.1",
     "turbolinks": "^5.2.0"
   },
-
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.8.2",
     "browser-sync": "2.26.7",
-    "del": "5.1.0"
+    "del": "5.1.0",
+    "webpack-dev-server": "^3.8.2"
   },
-
   "repository": {
-  "type": "git",
-  "url": "https://github.com/AliceOwl/Socstats"
+    "type": "git",
+    "url": "https://github.com/AliceOwl/Socstats"
   }
 }

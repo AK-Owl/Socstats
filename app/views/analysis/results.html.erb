@@ -1,19 +1,436 @@
+  <p id="notice"><%= notice %></p>
   <header class="header_analysis">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Analysis Results</h1>
+        <h1 class="mx-auto my-0 text-uppercase">Results</h1>
       </div>
     </div>
   </header>
 
-<h2>......................</h2>
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/frozen.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
 
-<%= @country1%>
-<%= @country2%>
-<%= @country3%>
-<%= @country4%>
-<%= @country5%>
-<%= @all%>
-<%= @data%>
+<style>
+#chartdiv {
+  width: 60%;
+  height: 500px;
+}
+#chart1div {
+  width: 70%;
+  height: 500px;
+}
+#chart2div {
+  width: 70%;
+  height: 500px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+</style>
 
-<h2>:::::::::::::::::::::::::</h2>
+
+<!-- HTML -->
+<div id="chartdiv" class="chartdiv" >
+<!--Refrences: from https://www.amcharts.com/ : JavaScript code is refractored based on the instructions provided -->
+<script>
+/**
+ * --------------------------------------------------------
+ * This demo was created using amCharts V4 preview release.
+ * 
+ * V4 is the latest installement in amCharts data viz
+ * library family, to be released in the first half of
+ * 2018.
+ *
+ * For more information and documentation visit:
+ * https://www.amcharts.com/docs/v4/
+ * --------------------------------------------------------
+ */
+
+am4core.ready(function() {
+am4core.useTheme(am4themes_animated);
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+chart.paddingTop = 40;
+// Add data
+chart.data = [{
+"country": "<%= raw @countries[0]%>",
+  "HPI": <%= raw @pfscr[0]%>,
+  "HFI": <%= raw @hdscr[0]%>,
+  "HEI": <%= raw @efscr[0]%>,
+  "HDI": <%= raw @hdindex[0]%>,
+  "GII": <%= raw @gii[0]%>,
+  
+}, {
+"country": "<%= raw @countries[1]%>",
+  "HPI": <%= raw @pfscr[1]%>,
+  "HFI": <%= raw @hdscr[1]%>,
+  "HEI": <%= raw @efscr[1]%>,
+  "HDI": <%= raw @hdindex[1]%>,
+  "GII": <%= raw @gii[1]%>,
+  
+}, {
+"country": "<%= raw @countries[2]%>",
+  "HPI": <%= raw @pfscr[2]%>,
+  "HFI": <%= raw @hdscr[2]%>,
+  "HEI": <%= raw @efscr[2]%>,
+  "HDI": <%= raw @hdindex[2]%>,
+  "GII": <%= raw @gii[2]%>,
+  
+}, {
+"country": "<%= raw @countries[3]%>",
+  "HPI": <%= raw @pfscr[3]%>,
+  "HFI": <%= raw @hdscr[3]%>,
+  "HEI": <%= raw @efscr[3]%>,
+  "HDI": <%= raw @hdindex[3]%>,
+  "GII": <%= raw @gii[3]%>,
+  
+}, {
+"country": "<%= raw @countries[4]%>",
+  "HPI": <%= raw @pfscr[4]%>,
+  "HFI": <%= raw @hdscr[4]%>,
+  "HEI": <%= raw @efscr[4]%>,
+  "HDI": <%= raw @hdindex[4]%>,
+  "GII": <%= raw @gii[4]%>,
+  
+ 
+} ];
+
+// Create axes
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country";
+categoryAxis.renderer.grid.template.location = 0;
+categoryAxis.renderer.minGridDistance = 60;
+categoryAxis.tooltip.disabled = true;
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.minWidth = 50;
+valueAxis.min = 0;
+valueAxis.cursorTooltipEnabled = false;
+
+function createValueAxis(title, showgrid) {
+  
+  // Create axis
+  var axis = chart.yAxes.push(new am4charts.ValueAxis());
+  axis.renderer.grid.template.disabled = !showgrid;
+    
+  // Set up axis title
+  axis.title.text = title;
+
+  return axis;
+}
+
+function createSeries(key, title, axis) {
+  var series = chart.series.push(new am4charts.ColumnSeries());
+  series.dataFields.valueY = key;
+  series.dataFields.categoryX = "country";
+  series.yAxis = axis;
+  series.tooltipText = "";
+  series.columns.template.strokeWidth = 0;
+  
+
+  series.columns.template.column.cornerRadiusTopLeft = 10;
+  series.columns.template.column.cornerRadiusTopRight = 10;
+  series.columns.template.column.fillOpacity = 0.8;
+   
+  return series;
+}
+
+createSeries(
+  "HPI",
+  "Series #1",
+  createValueAxis("Human Personal Freedom Index", true)
+);
+
+createSeries(
+  "HFI",
+  "Series #2",
+  createValueAxis("Human Freedom Index Score", false)
+);
+
+createSeries(
+  "HEI",
+  "Series #3",
+  createValueAxis("Human Economic Freedom Index Score", false)
+);
+
+createSeries(
+  "HDI",
+  "Series #4",
+  createValueAxis("Human Development Index ", false)
+);
+
+createSeries(
+  "GII",
+  "Series #5",
+  createValueAxis("Global Inequality Index", false)
+);
+});
+</script>
+</div>
+
+<div id = "chart1div" class="chart1div">
+<script>
+
+am4core.ready(function() {
+am4core.useTheme(am4themes_kelly);
+
+// Create chart instance
+var chart1 = am4core.create("chart1div", am4charts.XYChart);
+chart1.paddingTop = 40;
+// Add data
+chart1.data = [{
+"country1": "<%= raw @countries1[0]%>",
+  "ROL": <%= raw @pfscr[0]%>,
+  "SS": <%= raw @hdscr[0]%>,
+  "MOV": <%= raw @efscr[0]%>,
+  "REL": <%= raw @hdindex[0]%>,
+  "AAS": <%= raw @gii[0]%>,
+  "EXP": <%= raw @pfexp[0]%>
+}, {
+"country1": "<%= raw @countries1[1]%>",
+  "ROL": <%= raw @pfscr[1]%>,
+  "SS": <%= raw @hdscr[1]%>,
+  "MOV": <%= raw @efscr[1]%>,
+  "REL": <%= raw @hdindex[1]%>,
+  "AAS": <%= raw @gii[1]%>,
+  "EXP": <%= raw @pfexp[0]%>
+}, {
+"country1": "<%= raw @countries1[2]%>",
+  "ROL": <%= raw @pfscr[2]%>,
+  "SS": <%= raw @hdscr[2]%>,
+  "MOV": <%= raw @efscr[2]%>,
+  "REL": <%= raw @hdindex[2]%>,
+  "AAS": <%= raw @gii[2]%>,
+  "EXP": <%= raw @pfexp[2]%>
+}, {
+"country1": "<%= raw @countries1[3]%>",
+  "ROL": <%= raw @pfscr[3]%>,
+  "SS": <%= raw @hdscr[3]%>,
+  "MOV": <%= raw @efscr[3]%>,
+  "REL": <%= raw @hdindex[3]%>,
+  "AAS": <%= raw @gii[3]%>,
+  "EXP": <%= raw @pfexp[3]%>
+}, {
+"country1": "<%= raw @countries1[4]%>",
+  "ROL": <%= raw @pfscr[4]%>,
+  "SS": <%= raw @hdscr[4]%>,
+  "MOV": <%= raw @efscr[4]%>,
+  "REL": <%= raw @hdindex[4]%>,
+  "AAS": <%= raw @gii[4]%>,
+  "EXP": <%= raw @pfexp[4]%>
+ }];
+
+
+// Create axes
+var categoryAxis1 = chart1.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis1.dataFields.category = "country1";
+categoryAxis1.renderer.grid.template.location = 0;
+categoryAxis1.renderer.minGridDistance = 60;
+categoryAxis1.tooltip.disabled = true;
+
+var valueAxis1 = chart1.yAxes.push(new am4charts.ValueAxis());
+valueAxis1.renderer.minWidth = 50;
+valueAxis1.min = 0;
+valueAxis1.cursorTooltipEnabled = false;
+
+function createValueAxis(title, showgrid) {
+  
+  // Create axis
+  var axis1 = chart1.yAxes.push(new am4charts.ValueAxis());
+  axis1.renderer.grid.template.disabled = !showgrid;
+    
+  // Set up axis title
+  axis1.title.text = title;
+
+  return axis1;
+}
+
+function createSeries(key, title, axis) {
+  var series1 = chart1.series.push(new am4charts.ColumnSeries());
+  series1.dataFields.valueY = key;
+  series1.dataFields.categoryX = "country1";
+  series1.yAxis = axis;
+  series1.tooltipText = "";
+  series1.columns.template.strokeWidth = 0;
+  
+
+  series1.columns.template.column.cornerRadiusTopLeft = 10;
+  series1.columns.template.column.cornerRadiusTopRight = 10;
+  series1.columns.template.column.fillOpacity = 0.8;
+   
+  return series1;
+}
+
+createSeries(
+  "ROL",
+  "Series #1",
+  createValueAxis("Rule of law", true)
+);
+
+createSeries(
+  "SS",
+  "Series #2",
+  createValueAxis("Security and Safety", false)
+);
+
+createSeries(
+  "MOV",
+  "Series #3",
+  createValueAxis("Movement", false)
+);
+
+createSeries(
+  "REL",
+  "Series #4",
+  createValueAxis("Religion", false)
+);
+
+createSeries(
+  "AAS",
+  "Series #5",
+  createValueAxis("Association, Assembly and Civil Society", false)
+);
+createSeries(
+  "EXP",
+  "Series #6",
+  createValueAxis("Expression and Information", false)
+);
+});
+</script>
+</div>
+
+<div id = "chart2div" class="chart2div">
+<script>
+
+am4core.ready(function() {
+am4core.useTheme(am4themes_frozen);
+
+// Create chart instance
+var chart2 = am4core.create("chart2div", am4charts.XYChart);
+chart2.paddingTop = 40;
+// Add data
+chart2.data = [{
+"country1": "<%= raw @countries1[0]%>",
+  "GOV": <%= raw @efgov[0]%>,
+  "LEG": <%= raw @efleg[0]%>,
+  "MON": <%= raw @efmon[0]%>,
+  "TRA": <%= raw @trade[0]%>,
+  "REG": <%= raw @efreg[0]%>,
+  "GNI": <%= raw @gni[0]%>
+}, {
+"country1": "<%= raw @countries1[1]%>",
+  "GOV": <%= raw @efgov[1]%>,
+  "LEG": <%= raw @efleg[1]%>,
+  "MON": <%= raw @efmon[1]%>,
+  "TRA": <%= raw @trade[1]%>,
+  "REG": <%= raw @efreg[1]%>,
+  "GNI": <%= raw @gni[1]%>
+}, {
+"country1": "<%= raw @countries1[2]%>",
+  "GOV": <%= raw @efgov[2]%>,
+  "LEG": <%= raw @efleg[2]%>,
+  "MON": <%= raw @efmon[2]%>,
+  "TRA": <%= raw @trade[2]%>,
+  "REG": <%= raw @efreg[2]%>,
+  "GNI": <%= raw @gni[2]%>
+}, {
+"country1": "<%= raw @countries1[3]%>",
+  "GOV": <%= raw @efgov[3]%>,
+  "LEG": <%= raw @efleg[3]%>,
+  "MON": <%= raw @efmon[3]%>,
+  "TRA": <%= raw @trade[3]%>,
+  "REG": <%= raw @efreg[3]%>,
+  "GNI": <%= raw @gni[3]%>
+}, {
+"country1": "<%= raw @countries1[4]%>",
+  "GOV": <%= raw @efgov[4]%>,
+  "LEG": <%= raw @efleg[4]%>,
+  "MON": <%= raw @efmon[4]%>,
+  "TRA": <%= raw @trade[4]%>,
+  "REG": <%= raw @efreg[4]%>,
+  "GNI": <%= raw @gni[4]%>
+ }];
+
+
+// Create axes
+var categoryAxis2 = chart2.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis2.dataFields.category = "country1";
+categoryAxis2.renderer.grid.template.location = 0;
+categoryAxis2.renderer.minGridDistance = 60;
+categoryAxis2.tooltip.disabled = true;
+
+var valueAxis2 = chart2.yAxes.push(new am4charts.ValueAxis());
+valueAxis2.renderer.minWidth = 50;
+valueAxis2.min = 0;
+valueAxis2.cursorTooltipEnabled = false;
+
+function createValueAxis(title, showgrid) {
+  
+  // Create axis
+  var axis2 = chart2.yAxes.push(new am4charts.ValueAxis());
+  axis2.renderer.grid.template.disabled = !showgrid;
+    
+  // Set up axis title
+  axis2.title.text = title;
+
+  return axis2;
+}
+
+function createSeries(key, title, axis) {
+  var series2 = chart2.series.push(new am4charts.ColumnSeries());
+  series2.dataFields.valueY = key;
+  series2.dataFields.categoryX = "country1";
+  series2.yAxis = axis;
+  series2.tooltipText = "";
+  series2.columns.template.strokeWidth = 0;
+  
+
+  series2.columns.template.column.cornerRadiusTopLeft = 10;
+  series2.columns.template.column.cornerRadiusTopRight = 10;
+  series2.columns.template.column.fillOpacity = 0.8;
+   
+  return series2;
+}
+
+createSeries(
+  "GOV",
+  "Series #1",
+  createValueAxis("Size of Governament", true)
+);
+
+createSeries(
+  "LEG",
+  "Series #2",
+  createValueAxis("Legal System and Property Rights", false)
+);
+
+createSeries(
+  "MON",
+  "Series #3",
+  createValueAxis("Access to Sound Money", false)
+);
+
+createSeries(
+  "TRA",
+  "Series #4",
+  createValueAxis("Freedom to Trade Internationally", false)
+);
+
+createSeries(
+  "REG",
+  "Series #5",
+  createValueAxis("Regulation of Credit, Labor, and Business", false)
+);
+createSeries(
+  "GNI",
+  "Series #6",
+  createValueAxis("Gross National Income (GNI) per capita", false)
+);
+});
+</script>
+</div>
+
