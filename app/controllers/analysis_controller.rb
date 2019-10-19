@@ -21,7 +21,7 @@ def results
     country3 = params[:country3]
     country4 = params[:country4] 
     country5 = params[:country5]
-    
+
     puts "----------------------------"
 
     puts country1
@@ -39,7 +39,7 @@ def results
     @search3 = Development.where('country = ?', country3)
     @search4 = Development.where('country = ?', country4)
     @search5 = Development.where('country = ?', country5)
-
+    @countries = []
     @hdindex = []
     @lf = []
     @edu = []
@@ -64,6 +64,7 @@ def results
 
    # adding same coulm names to array variables
     @search1.each do |s|
+        @countries << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -75,7 +76,7 @@ def results
         @pfmov << s.freedom.pf_movement
         @pfrel << s.freedom.pf_religion
         @pfass << s.freedom.pf_association
-        @pfexp << s.freedom.pf_association
+        @pfexp << s.freedom.pf_expression
         @pdid << s.freedom.pf_identity
         @efgov << s.freedom.ef_government
         @efleg << s.freedom.ef_legal
@@ -88,6 +89,7 @@ def results
     end
 
     @search2.each do |s|
+        @countries << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -99,7 +101,7 @@ def results
         @pfmov << s.freedom.pf_movement
         @pfrel << s.freedom.pf_religion
         @pfass << s.freedom.pf_association
-        @pfexp << s.freedom.pf_association
+        @pfexp << s.freedom.pf_expression
         @pdid << s.freedom.pf_identity
         @efgov << s.freedom.ef_government
         @efleg << s.freedom.ef_legal
@@ -112,6 +114,7 @@ def results
     end
 
     @search3.each do |s|
+        @countries << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -123,7 +126,7 @@ def results
         @pfmov << s.freedom.pf_movement
         @pfrel << s.freedom.pf_religion
         @pfass << s.freedom.pf_association
-        @pfexp << s.freedom.pf_association
+        @pfexp << s.freedom.pf_expression
         @pdid << s.freedom.pf_identity
         @efgov << s.freedom.ef_government
         @efleg << s.freedom.ef_legal
@@ -136,6 +139,7 @@ def results
     end
 
     @search4.each do |s|
+        @countries << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -147,7 +151,7 @@ def results
         @pfmov << s.freedom.pf_movement
         @pfrel << s.freedom.pf_religion
         @pfass << s.freedom.pf_association
-        @pfexp << s.freedom.pf_association
+        @pfexp << s.freedom.pf_expression
         @pdid << s.freedom.pf_identity
         @efgov << s.freedom.ef_government
         @efleg << s.freedom.ef_legal
@@ -160,6 +164,7 @@ def results
     end
 
     @search5.each do |s|
+        @countries << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -171,7 +176,7 @@ def results
         @pfmov << s.freedom.pf_movement
         @pfrel << s.freedom.pf_religion
         @pfass << s.freedom.pf_association
-        @pfexp << s.freedom.pf_association
+        @pfexp << s.freedom.pf_expression
         @pdid << s.freedom.pf_identity
         @efgov << s.freedom.ef_government
         @efleg << s.freedom.ef_legal
