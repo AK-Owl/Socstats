@@ -10,19 +10,20 @@
 <script src="https://www.amcharts.com/lib/4/core.js"></script>
 <script src="https://www.amcharts.com/lib/4/charts.js"></script>
 <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
+<script src="https://www.amcharts.com/lib/4/themes/frozen.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
 
 <style>
 #chartdiv {
-  width: 100%;
+  width: 60%;
   height: 500px;
 }
 #chart1div {
-  width: 100%;
+  width: 70%;
   height: 500px;
 }
 #chart2div {
-  width: 100%;
+  width: 70%;
   height: 500px;
 }
 body {
@@ -175,7 +176,7 @@ createSeries(
 <script>
 
 am4core.ready(function() {
-am4core.useTheme(am4themes_animated);
+am4core.useTheme(am4themes_kelly);
 
 // Create chart instance
 var chart1 = am4core.create("chart1div", am4charts.XYChart);
@@ -306,7 +307,7 @@ createSeries(
 <script>
 
 am4core.ready(function() {
-am4core.useTheme(am4themes_animated);
+am4core.useTheme(am4themes_frozen);
 
 // Create chart instance
 var chart2 = am4core.create("chart2div", am4charts.XYChart);
