@@ -13,27 +13,188 @@ def index
     @hdi = params[:human_development_index]
 end
 
+
 def results
-    @country1 = params[:country1] [:id]
-    @country2 = params[:country2] [:id]
-    @country3 = params[:country3] [:id]
-    @country4 = params[:country4] [:id]
-    @country5 = params[:country5] [:id]
-    @all = params[:all]
+    # fetching the selected countries
+    country1 = params[:country1]
+    country2 = params[:country2]
+    country3 = params[:country3]
+    country4 = params[:country4] 
+    country5 = params[:country5]
+    
+    puts "----------------------------"
+
+    puts country1
+    puts country3
+
+    puts "----------------------------"
+
+
     @dev = Development.all
     @hfi = Freedom.all
-    @con1 = Development.connection.select_all("SELECT * FROM developments WHERE country = 'Norway'")
-
     
+    # Retrieving the records of the selected countries
+    @search1 = Development.where('country = ?', country1)
+    @search2 = Development.where('country = ?', country2)
+    @search3 = Development.where('country = ?', country3)
+    @search4 = Development.where('country = ?', country4)
+    @search5 = Development.where('country = ?', country5)
 
-   
-    @data = analysisdata
+    @hdindex = []
+    @lf = []
+    @edu = []
+    @me = []
+    @gni = []
+    @gii = []
+    @pfrol = []
+    @pfss = []
+    @pfmov = []
+    @pfrel = []
+    @pfass = []
+    @pfexp = []
+    @pdid = []
+    @efgov = []
+    @efleg = []
+    @efmon = []
+    @trade = []
+    @efreg = []
+    @pfscr = []
+    @efscr = []
+    @hdscr = []
 
-    @test1 = Development.where(params[:country1] [:id]).all
-
-    
-
+   # adding same coulm names to array variables
+    @search1.each do |s|
+        @hdindex << s.human_development_index
+        @lf << s.life_expectancy_at_birth
+        @edu << s.expected_education_years
+        @me << s.mean_education
+        @gni << s.gni_capita
+        @gii << s.giiindex
+        @pfrol << s.freedom.pf_rol
+        @pfss << s.freedom.pf_ss
+        @pfmov << s.freedom.pf_movement
+        @pfrel << s.freedom.pf_religion
+        @pfass << s.freedom.pf_association
+        @pfexp << s.freedom.pf_association
+        @pdid << s.freedom.pf_identity
+        @efgov << s.freedom.ef_government
+        @efleg << s.freedom.ef_legal
+        @efmon << s.freedom.ef_money
+        @trade << s.freedom.ef_trade
+        @efreg << s.freedom.ef_regulation
+        @pfscr << s.freedom.pf_score
+        @efscr << s.freedom.ef_score
+        @hdscr << s.freedom.hf_score
     end
 
-end
+    @search2.each do |s|
+        @hdindex << s.human_development_index
+        @lf << s.life_expectancy_at_birth
+        @edu << s.expected_education_years
+        @me << s.mean_education
+        @gni << s.gni_capita
+        @gii << s.giiindex
+        @pfrol << s.freedom.pf_rol
+        @pfss << s.freedom.pf_ss
+        @pfmov << s.freedom.pf_movement
+        @pfrel << s.freedom.pf_religion
+        @pfass << s.freedom.pf_association
+        @pfexp << s.freedom.pf_association
+        @pdid << s.freedom.pf_identity
+        @efgov << s.freedom.ef_government
+        @efleg << s.freedom.ef_legal
+        @efmon << s.freedom.ef_money
+        @trade << s.freedom.ef_trade
+        @efreg << s.freedom.ef_regulation
+        @pfscr << s.freedom.pf_score
+        @efscr << s.freedom.ef_score
+        @hdscr << s.freedom.hf_score
+    end
 
+    @search3.each do |s|
+        @hdindex << s.human_development_index
+        @lf << s.life_expectancy_at_birth
+        @edu << s.expected_education_years
+        @me << s.mean_education
+        @gni << s.gni_capita
+        @gii << s.giiindex
+        @pfrol << s.freedom.pf_rol
+        @pfss << s.freedom.pf_ss
+        @pfmov << s.freedom.pf_movement
+        @pfrel << s.freedom.pf_religion
+        @pfass << s.freedom.pf_association
+        @pfexp << s.freedom.pf_association
+        @pdid << s.freedom.pf_identity
+        @efgov << s.freedom.ef_government
+        @efleg << s.freedom.ef_legal
+        @efmon << s.freedom.ef_money
+        @trade << s.freedom.ef_trade
+        @efreg << s.freedom.ef_regulation
+        @pfscr << s.freedom.pf_score
+        @efscr << s.freedom.ef_score
+        @hdscr << s.freedom.hf_score
+    end
+
+    @search4.each do |s|
+        @hdindex << s.human_development_index
+        @lf << s.life_expectancy_at_birth
+        @edu << s.expected_education_years
+        @me << s.mean_education
+        @gni << s.gni_capita
+        @gii << s.giiindex
+        @pfrol << s.freedom.pf_rol
+        @pfss << s.freedom.pf_ss
+        @pfmov << s.freedom.pf_movement
+        @pfrel << s.freedom.pf_religion
+        @pfass << s.freedom.pf_association
+        @pfexp << s.freedom.pf_association
+        @pdid << s.freedom.pf_identity
+        @efgov << s.freedom.ef_government
+        @efleg << s.freedom.ef_legal
+        @efmon << s.freedom.ef_money
+        @trade << s.freedom.ef_trade
+        @efreg << s.freedom.ef_regulation
+        @pfscr << s.freedom.pf_score
+        @efscr << s.freedom.ef_score
+        @hdscr << s.freedom.hf_score
+    end
+
+    @search5.each do |s|
+        @hdindex << s.human_development_index
+        @lf << s.life_expectancy_at_birth
+        @edu << s.expected_education_years
+        @me << s.mean_education
+        @gni << s.gni_capita
+        @gii << s.giiindex
+        @pfrol << s.freedom.pf_rol
+        @pfss << s.freedom.pf_ss
+        @pfmov << s.freedom.pf_movement
+        @pfrel << s.freedom.pf_religion
+        @pfass << s.freedom.pf_association
+        @pfexp << s.freedom.pf_association
+        @pdid << s.freedom.pf_identity
+        @efgov << s.freedom.ef_government
+        @efleg << s.freedom.ef_legal
+        @efmon << s.freedom.ef_money
+        @trade << s.freedom.ef_trade
+        @efreg << s.freedom.ef_regulation
+        @pfscr << s.freedom.pf_score
+        @efscr << s.freedom.ef_score
+        @hdscr << s.freedom.hf_score
+    end
+    
+    
+    
+    puts "----------------------------"
+
+    puts @hdindex
+    puts @me
+    puts @pfscr
+
+    puts "----------------------------"
+        
+    # -- analysis_Helper.rb to fetch the data from sqlite - Attempt was nearly successful before moved to activerecords
+    #@data = analysisdata
+
+    end
+end
