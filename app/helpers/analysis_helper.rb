@@ -1,7 +1,7 @@
 module AnalysisHelper
 
         def analysisdata
-            analysisdata = connection.execute("SELECT developments.hdi_rank,
+            analysisdata = ("SELECT developments.hdi_rank,
             developments.country,
             developments.human_development_index,
             developments.life_expectancy_at_birth,
@@ -35,7 +35,7 @@ module AnalysisHelper
             FROM developments, freedoms 
             WHERE developments.country = freedoms.country 
             AND 
-            developments.country IN (@country1, @country2, @country3, @country4, @country5)")
+            developments.country IN (country1, country2, country3, country4, country5)")
             return analysisdata
         end
 

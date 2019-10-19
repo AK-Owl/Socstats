@@ -11,15 +11,14 @@
     <div class="container">
 
           <%= form_tag analysis_results_path, :method => :get do |form| %>
-          <div class="input-append">
-            <%= collection_select :country1, :id, Development.all, :country, :country %>
-            <%= collection_select :country2, :id, Development.all, :country, :country %>
-            <%= collection_select :country3, :id, Development.all, :country, :country %>
-            <%= collection_select :country4, :id, Development.all, :country, :country %>
-            <%= collection_select :country5, :id, Development.all, :country, :country %>
-
-           <input type="checkbox" name = "all" /> See All Valuess
-            <button type="submit" class="btn">submit</button>
+          <div class="input-append"><br><br>
+            <%= collection_select :country1, @freedom, Freedom.all, :country, :country %>
+            <%= collection_select :country2, @freedom, Freedom.all, :country, :country %>
+            <%= collection_select :country3, @freedom, Freedom.all, :country, :country %><br><br>
+            <%= collection_select :country4, @freedom, Freedom.all, :country, :country %>
+            <%= collection_select :country5, @freedom, Freedom.all, :country, :country %>
+            <br><br>
+          <button type="submit" class="btn">submit</button>
           </div>
 
         <% end %>
