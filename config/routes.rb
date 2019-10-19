@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'grayscale/index'
+  root 'grayscale/index'
   resources :developmentbyregions
   resources :developments
   resources :freedoms
@@ -14,7 +14,5 @@ Rails.application.routes.draw do
   
   #get "developmentanalysis" => "developments#developmentanalysis", as: "developmentanalysis"
 
-  root 'home#index'
-
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
