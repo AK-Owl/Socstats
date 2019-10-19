@@ -28,7 +28,7 @@ body {
 </style>
 
 <!-- HTML -->
-<div id="chartdiv">
+<div id="chartdiv" >
 <!--Refrences: from https://www.amcharts.com/ : JavaScript code is refractored based on the instructions provided -->
 <!-- Resources -->
 
@@ -61,35 +61,40 @@ chart.data = [{
   "HFI": <%= raw @hdscr[0]%>,
   "HEI": <%= raw @efscr[0]%>,
   "HDI": <%= raw @hdindex[0]%>,
-  "GII": <%= raw @gii[0]%>
+  "GII": <%= raw @gii[0]%>,
+  "EXP": <%= raw @pfexp[0]%>
 }, {
 "country": "<%= raw @countries[1]%>",
   "HPI": <%= raw @pfscr[1]%>,
   "HFI": <%= raw @hdscr[1]%>,
   "HEI": <%= raw @efscr[1]%>,
   "HDI": <%= raw @hdindex[1]%>,
-  "GII": <%= raw @gii[1]%>
+  "GII": <%= raw @gii[1]%>,
+  "EXP": <%= raw @pfexp[0]%>
 }, {
 "country": "<%= raw @countries[2]%>",
   "HPI": <%= raw @pfscr[2]%>,
   "HFI": <%= raw @hdscr[2]%>,
   "HEI": <%= raw @efscr[2]%>,
   "HDI": <%= raw @hdindex[2]%>,
-  "GII": <%= raw @gii[2]%>
+  "GII": <%= raw @gii[2]%>,
+  "EXP": <%= raw @pfexp[2]%>
 }, {
 "country": "<%= raw @countries[3]%>",
   "HPI": <%= raw @pfscr[3]%>,
   "HFI": <%= raw @hdscr[3]%>,
   "HEI": <%= raw @efscr[3]%>,
   "HDI": <%= raw @hdindex[3]%>,
-  "GII": <%= raw @gii[3]%>
+  "GII": <%= raw @gii[3]%>,
+  "EXP": <%= raw @pfexp[3]%>
 }, {
 "country": "<%= raw @countries[4]%>",
   "HPI": <%= raw @pfscr[4]%>,
   "HFI": <%= raw @hdscr[4]%>,
   "HEI": <%= raw @efscr[4]%>,
   "HDI": <%= raw @hdindex[4]%>,
-  "GII": <%= raw @gii[4]%>
+  "GII": <%= raw @gii[4]%>,
+  "EXP": <%= raw @pfexp[4]%>
  
 } ];
 
@@ -161,8 +166,13 @@ createSeries(
 
 createSeries(
   "GII",
-  "Series #3",
+  "Series #5",
   createValueAxis("Global Inequality Index", false)
+);
+createSeries(
+  "EXP",
+  "Series #6",
+  createValueAxis("Expression and Information", false)
 );
 });
 </script>
@@ -170,6 +180,7 @@ createSeries(
 
 <div id = "chart1div">
 <script>
+
 /**
  * --------------------------------------------------------
  * This demo was created using amCharts V4 preview release.
@@ -187,60 +198,61 @@ am4core.ready(function() {
 am4core.useTheme(am4themes_animated);
 
 // Create chart instance
-var chart1 = am4core.create("chartdiv", am4charts.XYChart);
-chart1.paddingTop = 40;
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+chart.paddingTop = 40;
 // Add data
-chart1.data = [{
-"country": "<%= raw @countries[0]%>",
-  "ROL": <%= raw @pfrol[0]%>,
-  "SS": <%= raw @pfss[0]%>,
-  "MOV": <%= raw @pfmov[0]%>,
-  "REL": <%= raw @pfrel[0]%>,
-  "AAS": <%= raw @pfass[0]%>,
+chart.data = [{
+"country1": "<%= raw @countries1[0]%>",
+  "HPI": <%= raw @pfscr[0]%>,
+  "HFI": <%= raw @hdscr[0]%>,
+  "HEI": <%= raw @efscr[0]%>,
+  "HDI": <%= raw @hdindex[0]%>,
+  "GII": <%= raw @gii[0]%>,
   "EXP": <%= raw @pfexp[0]%>
 }, {
-"country": "<%= raw @countries[1]%>",
-  "ROL": <%= raw @pfrol[1]%>,
-  "SS": <%= raw @pfss[1]%>,
-  "MOV": <%= raw @pfmov[1]%>,
-  "REL": <%= raw @pfrel[1]%>,
-  "AAS": <%= raw @pfass[1]%>,
-  "EXP": <%= raw @pfexp[1]%>
+"country1": "<%= raw @countries1[1]%>",
+  "HPI": <%= raw @pfscr[1]%>,
+  "HFI": <%= raw @hdscr[1]%>,
+  "HEI": <%= raw @efscr[1]%>,
+  "HDI": <%= raw @hdindex[1]%>,
+  "GII": <%= raw @gii[1]%>,
+  "EXP": <%= raw @pfexp[0]%>
 }, {
-"country": "<%= raw @countries[2]%>",
-  "ROL": <%= raw @pfrol[2]%>,
-  "SS": <%= raw @pfss[2]%>,
-  "MOV": <%= raw @pfmov[2]%>,
-  "REL": <%= raw @pfrel[2]%>,
-  "AAS": <%= raw @pfass[2]%>,
+"country1": "<%= raw @countries1[2]%>",
+  "HPI": <%= raw @pfscr[2]%>,
+  "HFI": <%= raw @hdscr[2]%>,
+  "HEI": <%= raw @efscr[2]%>,
+  "HDI": <%= raw @hdindex[2]%>,
+  "GII": <%= raw @gii[2]%>,
   "EXP": <%= raw @pfexp[2]%>
 }, {
-"country": "<%= raw @countries[3]%>",
-  "ROL": <%= raw @pfrol[3]%>,
-  "SS": <%= raw @pfss[3]%>,
-  "MOV": <%= raw @pfmov[3]%>,
-  "REL": <%= raw @pfrel[3]%>,
-  "AAS": <%= raw @pfass[3]%>,
+"country1": "<%= raw @countries1[3]%>",
+  "HPI": <%= raw @pfscr[3]%>,
+  "HFI": <%= raw @hdscr[3]%>,
+  "HEI": <%= raw @efscr[3]%>,
+  "HDI": <%= raw @hdindex[3]%>,
+  "GII": <%= raw @gii[3]%>,
   "EXP": <%= raw @pfexp[3]%>
 }, {
-"country": "<%= raw @countries[4]%>",
-  "ROL": <%= raw @pfrol[4]%>,
-  "SS": <%= raw @pfss[4]%>,
-  "MOV": <%= raw @pfmov[4]%>,
-  "REL": <%= raw @pfrel[4]%>,
-  "AAS": <%= raw @pfass[4]%>,
+"country1": "<%= raw @countries1[4]%>",
+  "HPI": <%= raw @pfscr[4]%>,
+  "HFI": <%= raw @hdscr[4]%>,
+  "HEI": <%= raw @efscr[4]%>,
+  "HDI": <%= raw @hdindex[4]%>,
+  "GII": <%= raw @gii[4]%>,
   "EXP": <%= raw @pfexp[4]%>
-}];
+ 
+} ];
 
 
 // Create axes
-var categoryAxis = chart1.xAxes.push(new am4charts.CategoryAxis());
-categoryAxis.dataFields.category = "country";
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country1";
 categoryAxis.renderer.grid.template.location = 0;
 categoryAxis.renderer.minGridDistance = 60;
 categoryAxis.tooltip.disabled = true;
 
-var valueAxis = chart1.yAxes.push(new am4charts.ValueAxis());
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.renderer.minWidth = 50;
 valueAxis.min = 0;
 valueAxis.cursorTooltipEnabled = false;
@@ -248,7 +260,7 @@ valueAxis.cursorTooltipEnabled = false;
 function createValueAxis(title, showgrid) {
   
   // Create axis
-  var axis = chart1.yAxes.push(new am4charts.ValueAxis());
+  var axis = chart.yAxes.push(new am4charts.ValueAxis());
   axis.renderer.grid.template.disabled = !showgrid;
     
   // Set up axis title
@@ -258,9 +270,9 @@ function createValueAxis(title, showgrid) {
 }
 
 function createSeries(key, title, axis) {
-  var series = chart1.series.push(new am4charts.ColumnSeries());
+  var series = chart.series.push(new am4charts.ColumnSeries());
   series.dataFields.valueY = key;
-  series.dataFields.categoryX = "country";
+  series.dataFields.categoryX = "country1";
   series.yAxis = axis;
   series.tooltipText = "";
   series.columns.template.strokeWidth = 0;
@@ -275,41 +287,39 @@ function createSeries(key, title, axis) {
 }
 
 createSeries(
-  "ROL",
+  "HPI",
   "Series #1",
-  createValueAxis("Rule of law", true)
+  createValueAxis("Human Personal Freedom Index", true)
 );
 
 createSeries(
-  "SS",
+  "HFI",
   "Series #2",
-  createValueAxis("Security and Safety", false)
+  createValueAxis("Human Freedom Index Score", false)
 );
 
 createSeries(
-  "MOV",
+  "HEI",
   "Series #3",
-  createValueAxis("Movement, false)
+  createValueAxis("Human Economic Freedom Index Score", false)
 );
 
 createSeries(
-  "REL",
+  "HDI",
   "Series #4",
-  createValueAxis("Religion", false)
+  createValueAxis("Human Development Index ", false)
 );
 
 createSeries(
-  "AAS",
-  "Series #3",
-  createValueAxis("Association, Assembly, and Civil Society", false)
+  "GII",
+  "Series #5",
+  createValueAxis("Global Inequality Index", false)
 );
-
 createSeries(
   "EXP",
-  "Series #3",
+  "Series #6",
   createValueAxis("Expression and Information", false)
 );
-});
 });
 </script>
 </div>

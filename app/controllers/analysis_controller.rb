@@ -40,6 +40,7 @@ def results
     @search4 = Development.where('country = ?', country4)
     @search5 = Development.where('country = ?', country5)
     @countries = []
+    @countries1 = []
     @hdindex = []
     @lf = []
     @edu = []
@@ -65,6 +66,7 @@ def results
    # adding same coulm names to array variables
     @search1.each do |s|
         @countries << s.country
+        @countries1 << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -90,6 +92,7 @@ def results
 
     @search2.each do |s|
         @countries << s.country
+        @countries1 << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -115,6 +118,7 @@ def results
 
     @search3.each do |s|
         @countries << s.country
+        @countries1 << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -140,6 +144,7 @@ def results
 
     @search4.each do |s|
         @countries << s.country
+        @countries1 << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
@@ -165,6 +170,7 @@ def results
 
     @search5.each do |s|
         @countries << s.country
+        @countries1 << s.country
         @hdindex << s.human_development_index
         @lf << s.life_expectancy_at_birth
         @edu << s.expected_education_years
