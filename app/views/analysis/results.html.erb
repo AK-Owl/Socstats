@@ -1,4 +1,4 @@
-    <header class="header_analysis">
+  <header class="header_analysis">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Results</h1>
@@ -12,6 +12,7 @@
 <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 <script src="https://www.amcharts.com/lib/4/themes/frozen.js"></script>
 <script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 
 <style>
 #chartdiv {
@@ -37,11 +38,10 @@ body {
 }
 </style>
 
-<div class="col-md-10 mx-auto">
+<div id = "charts" class="charts">
 <!-- HTML -->
-<h4>Statistic Composite Index </h4>
+<h4>Statistic Composite Index </h4> 
 <div id="chartdiv" class="chartdiv" >
-
 <!--Refrences: from https://www.amcharts.com/ : JavaScript code is refractored based on the instructions provided -->
 <script>
 /**
@@ -179,6 +179,9 @@ createSeries(
 });
 </script>
 </div>
+
+
+
 <br>
 <h4>Personal Freedom Index</h4>
 <div id = "chart1div" class="chart1div">
@@ -444,3 +447,31 @@ createSeries(
 </script>
 </div>
 </div>
+
+
+
+<script> 
+$("button").click (function() {
+
+var doc = new jsPDF();
+
+
+
+doc.fromHTML($('#charts').get(0), 30,20,{
+             'width':500,
+
+});
+doc.addPage();
+
+doc.fromHTML($('#charts').get(0), 30,20,{
+             'width':500,
+
+});
+doc.save('analysis.pdf');
+
+});
+});
+
+</script>
+
+<br> <button id ="button">generate PDF</button> 
