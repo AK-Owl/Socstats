@@ -91,7 +91,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, #313133 100%), url("city.jpg");
+  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(17, 44, 56, 0.7) 85%, rgba(16,	29,	43, 0.9) 100%), url("city.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -112,7 +112,7 @@
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
-  color: white;
+  color: whitesmoke, 0.9 !important;
   font-weight: bold;
 }
 
@@ -207,7 +207,7 @@
   height: 300px;
   min-height: 20rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, #313133 100%), url("analysis.jpeg");
+  background: linear-gradient(to bottom, rgba(138, 140, 143, 0.1) 0%, rgba(6, 17, 22, 0.3) 50%, rgba(6, 17, 22, 0.7) 75%, rgba(6, 17, 22, 0.7) 85%), url("analysis.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -290,12 +290,13 @@
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  padding-top: 5rem;
+  background: linear-gradient(to bottom, rgba(16,	29,	43, 0.93) 10%, rgba(16, 29,	43, 0.9) 75%, rgba(37, 46, 56, 0.9) 100%);
 }
 
 .about-section p {
   margin-bottom: 5rem;
+  color: white !important;
 }
 
 .projects-section {

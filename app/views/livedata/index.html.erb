@@ -113,10 +113,10 @@ header .overlay {
                             <h3><a href=<%=@result["response"]["results"][i]["webUrl"]%> target="_blank">>Read More &rarr;</a></h3>
                         </div>
                         <div class="card-footer text-muted">
-                        Posted on ... by <a href="https://www.theguardian.com">The Guardian</a>
+                        Posted on <%=@result["response"]["results"][i]["webPublicationDate"]%> by <a href="https://www.theguardian.com">The Guardian</a>
                         </div>
                     </div>
-                <% end %>  
+                <% end %>
                 
                 <!-- End of Blog Post -->
                
