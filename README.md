@@ -1,4 +1,3 @@
-
 # SocStats Web App
 
 ![](readme_screenshots/landing.png)
@@ -217,7 +216,7 @@ However, at the moment the highcharts display disappears on refresh and a user h
 * Used Helper methods to retrieve the data from the models, due to unsolvable issues, we migrated to ActiveRecord methods and queries 
 * Download the entire data to json format. Click on download, redirects to page with json object and download option available only on reload the page. - future development
 * Exception handling 
->(a special kind of object, an instance of the class Exception or a descendant of that class that represents some kind of >exceptional condition; it indicates that >something has gone wrong. When this occurs, an exception is raised (or thrown).) 
+>(a special kind of object, an instance of the class Exception or a descendant of that class that represents some kind of >exceptional condition; it indicates that something has gone wrong. When this occurs, an exception is raised (or thrown).) 
 was partially implemented
 
 **Future potential:**
