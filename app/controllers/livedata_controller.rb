@@ -8,14 +8,8 @@ class LivedataController < ApplicationController
     # convert the result into JSON object
     @result = JSON.parse(response.body)
     
-    # fetching each Json object
-    @result["response"]["results"].each do |data|
-      @title = data["id"]
-      @webtitle = data["webTitle"]
-      @weburl = data["webUrl"]
-      @bobytext = data["fields"]["bodyText"]  
     end
-  end
+  
 end
 
 

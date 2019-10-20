@@ -1,4 +1,4 @@
-  <!-- <header class="header_data">
+<!-- <header class="header_data">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Live Data</h1>
@@ -104,16 +104,16 @@ header .overlay {
                 <p>This section contains complimentary articles, received from The Guardian and aims to provide users with additional information on the Human Development and Human Freedom topics to support the oper source data provided.</p>
         
                  <!-- Blog Post -->
-                <%= @result["response"]["results"].each do |data| %>
-                    <div class="card mb-4">
+                 <%= for i in 0..9 do %>
+                        <div class="card mb-4">
                         <img class="card-img-top" src="https://mumbrella.com.au/wp-content/uploads/2017/04/The-Guardian.png" alt="Card image cap"> <!-- The Guardian logo from https://www.google.com/imgres?imgurl=https%3A%2F%2Fmumbrella.com.au%2Fwp-content%2Fuploads%2F2017%2F04%2FThe-Guardian.png&imgrefurl=https%3A%2F%2Fmumbrella.com.au%2Fguardian-ceases-publishing-apple-news-facebook-instant-articles-440249&docid=LjCubqeSnpK4XM&tbnid=OtB-Xj5aziC19M%3A&w=830&h=346&safe=strict&client=firefox-b-d&q=the%20guardian%20header&iact=mrc-->
                         <div class="card-body">
-                            <h2 class="card-title"><%= data["webTitle"] %></h2>
-                            <p class="card-text"><%= data["fields"]["bodyText"] %></p>
-                            <h3><a href=<%= data["webUrl"] %>>Read More &rarr;</a></h3>
+                            <h2 class="card-title"><%=@result["response"]["results"][i]["webTitle"]%></h2>
+                            <p class="card-text"><%=@result["response"]["results"][i]["fields"]["bodyText"]%></p>
+                            <h3><a href=<%=@result["response"]["results"][i]["webUrl"]%>>Read More &rarr;</a></h3>
                         </div>
                         <div class="card-footer text-muted">
-                        Posted on ... by <a href="https://www.theguardian.com">The Guardian</a>
+                        Posted on <%=@result["response"]["results"][i]["webPublicationDate"]%> by <a href="https://www.theguardian.com">The Guardian</a>
                         </div>
                     </div>
                 <% end %>  

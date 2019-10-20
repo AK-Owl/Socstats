@@ -1,10 +1,18 @@
-#require 'guardian-content'
-require 'httparty'
-#require 'unirest'
 class HomeController < ApplicationController
 
   def index
-    @response = HTTParty.get('https://content.guardianapis.com/search?show-fields=bodyText&q=human%20AND%20(development%20OR%20freedom)&from-date=2014-01-01&api-key=test')
-
+    # downlaod tabular data schema to JSON file
+    rows = []
+    CSV.foreach('lib/assets/human_development_country.csv', headers: true, converters: :all) do |row|
+        rows << row.to_hash
+    end
+    json = rows.to_json
+    fJson = File.open("tmp/temp.json","w")
+    fJson.write(json)
+    fJson.close
+    send_file("#{Rails.root}/tmp/temp.json", type: "application/json", )
+    
   end
+   
+
 end
