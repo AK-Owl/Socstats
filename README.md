@@ -46,51 +46,51 @@ The project was designed for researchers, students, analysts, human rights activ
 *file: Gemfile. Node dependencies:*
 
 Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
->gem 'rails', '~> 6.0.0'
+```gem 'rails', '~> 6.0.0'```
 
 Use Puma as the app server
->gem 'puma', '~> 3.11'
+```gem 'puma', '~> 3.11'```
 
 Use SCSS for stylesheets
->gem 'sass-rails', '~> 5'
+```gem 'sass-rails', '~> 5'```
 
 Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
->gem 'webpacker', '~> 4.0'
+```gem 'webpacker', '~> 4.0'```
 
 Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
->gem 'turbolinks', '~> 5'
+```gem 'turbolinks', '~> 5'```
 
 Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
->gem 'jbuilder', '~> 2.7'
+```gem 'jbuilder', '~> 2.7'```
 
 This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
->gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+```gem 'jquery-rails', '~> 4.3', '>= 4.3.5'```
 
 Windows does not include zoneinfo files, so bundle the tzinfo-data gem
->gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+```gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]```
 
 A Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
->gem 'bootstrap-sass'
+```gem 'bootstrap-sass'```
 
 Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
->gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
+```gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'```
 
 Gem for consuming restful web services dead easy
->gem 'httparty', '~> 0.17.1'
+```gem 'httparty', '~> 0.17.1'```
 
 The CSV library provides a complete interface to CSV files and data. I
->gem 'csv', '~> 0.0.1'
+```gem 'csv', '~> 0.0.1'```
 
 Reduces boot times through caching; required in config/boot.rb
->gem 'bootsnap', '>= 1.4.2', require: false
+```gem 'bootsnap', '>= 1.4.2', require: false```
 
-**Gems that did not work out:**
+**Gems that did NOT work out (error 500):**
 
 Unirest is a set of lightweight HTTP libraries available in multiple languages.
->gem 'unirest', '~> 1.1', '>= 1.1.2'
+```em 'unirest', '~> 1.1', '>= 1.1.2'```
 
 A library for the Guardian Content API
->gem 'guardian-content'
+```gem 'guardian-content'```
 
 
 ## Installation & Configuration
@@ -102,35 +102,35 @@ A library for the Guardian Content API
 
 ```yarn install --check-files```
 
-bundle update
+```bundle update```
 
 **for database initialisation & configuration**
 
-rake db:migrate
+```rake db:migrate```
 
-rake developmentbyregion:seed_developmentbyregion
+```rake developmentbyregion:seed_developmentbyregion```
 
-rake freedom:seed_freedom
+```rake freedom:seed_freedom```
 
-rake development:seed_development
+```rake development:seed_development```
 
 **supporting gems for application:**
 
-gem install highcharts-rails 
+```gem install highcharts-rails ```
 
-npm install bootstrap@3
+```npm install bootstrap@3```
 
-yarn add highcharts 
+```yarn add highcharts ```
 
-yarn add jquery 
+```yarn add jquery ```
 
-gem install amcharts-js -v 0.1.0
+```gem install amcharts-js -v 0.1.0```
 
-sudo apt-get install libpq-dev or sudo apt-get install postgresql
+```sudo apt-get install libpq-dev or sudo apt-get install postgresql```
 
 ## Deployment instructions
 
-To run on the local/Development environment: _rails server_ or _rails s_ from the project directory
+To run on the local/Development environment: ```rails server``` or ```rails s``` from the project directory
 
 ## Production Deployment: Heroku
 
@@ -150,11 +150,4 @@ _in database.yml change production database adapter from sqlite3 to postgresql a
 "CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use @import in CSS it creates another HTTP request. Sass builds on top of the current CSS @import but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser."
 from https://sass-lang.com/guide
 
-#app/assets/javascripts/application.js (in our case, app/javascript/packs/application.js):
-//= require jquery3
-//= require bootstrap
 
-
-bundle
-
-rails generate controller grayscale index
