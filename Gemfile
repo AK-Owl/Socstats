@@ -23,11 +23,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 # Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
 gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
-#Makes http fun! Also, makes consuming restful web services dead easy.
+#Gem for consuming restful web services dead easy
 gem 'httparty', '~> 0.17.1'
-
-
-
+#A library for the Guardian Content AP
+#gem 'guardian-content', '~> 0.2.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

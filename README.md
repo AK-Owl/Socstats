@@ -7,7 +7,69 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
+
+Rails 6.0.0
+
+* System dependencies:
+
+file: package.json. Node dependencies: 
+
+  "@amcharts/amcharts4": "^4.7.3",
+    "@amcharts/amcharts4-geodata": "^4.1.7",
+    "@fortawesome/fontawesome-free": "5.10.2",
+    "@rails/actioncable": "^6.0.0-alpha",
+    "@rails/activestorage": "^6.0.0-alpha",
+    "@rails/ujs": "^6.0.0-alpha",
+    "@rails/webpacker": "^4.0.7",
+    "bootstrap": "^3.4.1",
+    "highcharts": "^7.2.0",
+    "jquery": "^3.4.1",
+    "jquery.easing": "^1.4.1",
+    "leaflet": "^1.5.1",
+    "turbolinks": "^5.2.0"
+
+file: Gemfile. Node dependencies:
+
+ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 6.0.0'
+
+# Use Puma as the app server
+gem 'puma', '~> 3.11'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5'
+
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker', '~> 4.0'
+
+# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem 'turbolinks', '~> 5'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.7'
+
+# This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass'
+
+# Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
+gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
+
+# Gem for consuming restful web services dead easy
+gem 'httparty', '~> 0.17.1'
+
+
+
+
+
 
 * Configuration
 
