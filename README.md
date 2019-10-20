@@ -7,8 +7,7 @@
 ## ABOUT THE PROJECT:
 
 **The project is avaliable via the link: http://socstats-spices.herokuapp.com/**
-*SocStats project was developed by Spices team as a part of MSc Information Technology course as a scope of a bigger project in order to demonstrate team skills, technology and its potential implementation. The idea was inspired by the datasets found in Kaggle: to gather global statistics and relevant data on sociology (like Human Development Index, Human Freedom Index, etc.) in one place, where it will be regularly updated from its sources and provide the users with free data visualization and analytical tools with options to download the selected results.*
-
+*SocStats project was developed by Spices team as a part of MSc Information Technology course as a scope of a bigger project in order to demonstrate team skills, technology and its potential implementation. The idea was inspired by the datasets found in Kaggle: to gather global statistics and relevant data on sociology (like Human Development Index, Human Freedom Index, etc.) in one place, where it will be regularly updated from its sources and provide the users with free data visualization and analytical tools with options to download the selected results. The aim of the current project is to demonstrate a scope of such application as a demo prototype for the duture development. *
 
 ## The Context and DataSet Sources:
 
@@ -20,7 +19,7 @@
 
 >**The Human Freedom Index** measures economic freedoms such as the freedom to trade or to use sound money, and it captures >the degree to which people are free to enjoy the major freedoms often referred to as civil liberties—freedom of speech, >religion, association, and assembly— in the countries in the survey. In addition, it includes indicators on rule of law, >crime and violence, freedom of movement, and legal discrimination against same-sex relationships. Source: https://www.kaggle.com/gsutters/the-human-freedom-index
 
-
+Due to the huge size of the datasets all together and limitations of this project (time constraints, tasks constraints) we aimed to created the database to produce the scope of the dataset given as a demonstration of future potential of the application. Full datasets are available via the links above. 
 
 ## TARGET USERS:
 The project was designed for researchers, students, analysts, human rights activists and any interested parties to ease the search and analysis processes, leaving people more time for action.
@@ -156,12 +155,51 @@ _in database.yml change production database adapter from sqlite3 to postgresql a
 **attach screennshot here**
 
 
+## Development Process:
 
+The application was developed within two weeks, adapting spiral methodology to four 3-day iterations, as it suits best for a small project like this:
 
+**Iteration 1:	Dataset search and application design**
+
+Initially, two main datasets were chosen for the database: Human Development Report 2015 and the Human Freedom Index (see the links above), liked through 2 common attributes: countries  and year: 2015, so only the high-level categories are left for application optimization and better analysis. Rails is known for quick web development, but slow peformance. Taking into account Heroku limitation of 10000 records and tight project scedule, the team decided not to risk the production stage for the sake of a larger data scope, especially taking into account the complexity of linking the data (many variables for mismatching years had to be cut down).
+
+**Iteration 2.	Database Design and Development**
+
+Linked tables were created with Rails Active Records. SQLite3 was used for local DB development and Rails Active Record associations were used to link the models (tables) according to the database design principles
+
+**Iteration 3.	Application Development**
+
+The application was developed with Ruby on Rails, using Model-View-COntroller (MVC) architecture pattern, GitHub for version control, Bootstrap templates and themes for GUI (for optimization of development within the deadline),  DataWrapper, Amcharts and Highcharts for data visualization to build up on it and Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
 
 #sass syntax@import for optimization of website performance by compiling the CSS into one file that is served to the browser.
-
 "CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use @import in CSS it creates another HTTP request. Sass builds on top of the current CSS @import but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser."
-from https://sass-lang.com/guide
+Source: https://sass-lang.com/guide
+
+**Iteration 3.	Debugging and Documentation**
+
+The project task did not require testing, so only black box testing was implemented for quality assurance. The project has got through several debugging processed, as some of the gems and packages were causing conflicts, others were not responsive/not suitable for rails. Some parts of the code were left unfinished and commented for future development. All sources are referenced in the code comments, including media files. 
+
+SocStats was designed as a fat client application due to the advanced GUI interface, low server requirements, better multimedia performance: one of the goals was to make the data access and analysis easier for regular users, so responsiveness of the application and its high performance were prioritised. 
+
+
+
+## Issues (partial implementation):
+
+In this section the partially implemented features of the application are listed. These functionalities are currently under development stage, the team is working on its improvements. Pull requests and update suggestions will be much appreciated. 
+
+* http://socstats-spices.herokuapp.com/  - for proper displaying the link has to be strictly http, NOT https: this project does not have ssl licence yet, so in the secure browsing regime some items will not display as expected
+* The download of dataset is avaliable only in JSON format for now. 
+* The detailed highcharts per country are availabe via country links in the table:
+
+![](readme_screenshots/highcharts.png)
+However, at the moment the highcharts display disappears on refresh and a user has to go back to reload it again.
+
+
+**Future potential:**
+
+This project can be used as a starting point for further enhancement of its features, embedding more data, analytical tools and supporting documents as a user-friendly open-source project to ease the research and implement new unique analytical tools in future. Gradually the embedded parts can be replaced with original code with API for users provided. 
+
+
+
 
 
