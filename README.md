@@ -3,8 +3,10 @@
 
 ![](readme_screenshots/landing.png)
 
+
 ## ABOUT THE PROJECT:
 
+**The project is avaliable via the link: http://socstats-spices.herokuapp.com/ - automatic!**
 *SocStats project was developed by Spices team as a part of MSc Information Technology course as a scope of a bigger project in order to demonstrate team skills, technology and its potential implementation. The idea was inspired by the datasets found in Kaggle: to gather global statistics and relevant data on sociology (like Human Development Index, Human Freedom Index, etc.) in one place, where it will be regularly updated from its sources and provide the users with free data visualization and analytical tools with options to download the selected results.*
 
 
@@ -12,11 +14,11 @@
 The project was designed for researchers, students, analysts, human rights activists and any interested parties to ease the search and analysis processes, leaving people more time for action.
 
 ### Top-level User stories:
-*	A User should be able to access the web app from different devices via the link: https//fathomless-chamber 89094.herokuapp.com/ 
-*	A User should be able to navigate easily through responsive menu and analytical tools.
-*	A User should be able to access open source and live data displayed on the website.
-*	A User should be able to download the data available.
-*	A User should be able to select data attributes and display the analysis results.
+*	_A User should be able to access the web app from different devices via the link: https//fathomless-chamber 89094.herokuapp.com/_
+*	_A User should be able to navigate easily through responsive menu and analytical tools._
+*	_A User should be able to access open source and live data displayed on the website._
+*	_A User should be able to download the data available._
+*	_A User should be able to select data attributes and display the analysis results._
 
 ## Ruby version
 
