@@ -91,7 +91,7 @@ Gem that includes Highcharts (Interactive JavaScript charts for your web project
 Gem for consuming restful web services dead easy
 ```gem 'httparty', '~> 0.17.1'```
 
-The CSV library provides a complete interface to CSV files and data. I
+The CSV library provides a complete interface to CSV files and data. 
 ```gem 'csv', '~> 0.0.1'```
 
 Reduces boot times through caching; required in config/boot.rb
@@ -180,7 +180,7 @@ DataWrapper, Amcharts and Highcharts were embedded for data visualization enhanc
 ![](readme_screenshots/map.png)
 
 Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
-![](readme_screenshots/congig_yml.png)
+![](readme_screenshots/config_yml.png)
 
 **User Sotries by page**
 
