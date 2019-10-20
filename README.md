@@ -141,6 +141,8 @@ A library for the Guardian Content API
 
 ```sudo apt-get install libpq-dev or sudo apt-get install postgresql```
 
+```yarn add jspdf```
+
 ## Deployment instructions
 
 To run on the local/Development environment: ```rails server``` or ```rails s``` from the project directory
@@ -152,9 +154,6 @@ https://devcenter.heroku.com/articles/getting-started-with-rails5
 
 _in database.yml change production database adapter from sqlite3 to postgresql as mentioned in the file_
 
-**attach screennshot here**
-
-
 ## Development Process:
 
 The application was developed within two weeks, adapting spiral methodology to four 3-day iterations, as it suits best for a small project like this:
@@ -165,19 +164,37 @@ Initially, two main datasets were chosen for the database: Human Development Rep
 
 **Iteration 2.	Database Design and Development**
 
-Linked tables were created with Rails Active Records. SQLite3 was used for local DB development and Rails Active Record associations were used to link the models (tables) according to the database design principles
+3 Linked tables (=models) were created with Rails Active Records: _development_, _freedom_, _developmentbyregion_. SQLite3 was used for local DB development and Rails Active Record associations were used to link the models (tables) according to the database design principles (source: https://www.oreilly.com/library/view/access-database-design/0596002734/ch04.html)
+DB scaffolding turned out to be challenging initially there were 123 columns which were later cut down to 30 (top-level categories). Linking two different dataset was a madatory task to minimise parent-child tables attributes/data conflicts while seeding the data from two datasets.
 
 **Iteration 3.	Application Development**
 
-The application was developed with Ruby on Rails, using Model-View-COntroller (MVC) architecture pattern, GitHub for version control, Bootstrap templates and themes for GUI (for optimization of development within the deadline),  DataWrapper, Amcharts and Highcharts for data visualization to build up on it and Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
+The application was developed with Ruby on Rails, using Model-View-COntroller (MVC) architecture pattern.
+GitHub was used for version control, using projects-automated kanban chart for tasks monitoring.
+Bootstrap templates and themes were implemented for GUI (for optimization of development within the deadline). The Grayscale Bootstrap template was adapted for modification: #sass syntax@import for optimization of website performance by compiling the CSS into one file that is served to the browser. 
+>CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that >each time you use @import in CSS it creates another HTTP request. Sass builds on top of the current CSS @import but instead >of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing >into so you can serve a single CSS file to the web browser. Source: https://sass-lang.com/guide
+The template integration process caused a number of bugs that have been continiously fixed throughout the project.
 
-#sass syntax@import for optimization of website performance by compiling the CSS into one file that is served to the browser.
-"CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use @import in CSS it creates another HTTP request. Sass builds on top of the current CSS @import but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser."
-Source: https://sass-lang.com/guide
+DataWrapper, Amcharts and Highcharts were embedded for data visualization enhance the learning experience and build up on it in future development. Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
+
+**User Sotries by page**
+
+Home page: A User is able to access the main page, interactive global map, information about the app and contact details. 
+Open Data: A User is able to access the dataset, search by country, access detailed information by country and interactive Highcharts for general analysis of the data. 
+Data Analysis: A User is able to select countries (up to 5) to get data analysis (visualisation in graphs) for the countries selected - redirected to the results page. 
+Live Data: A User is able to access live data (articles) from the Guardian as a complimentary information sourse relevant to the research topic. 
+
+
+
+# INSERT A SCREENSHOT HERE
+
+Another controller/view was generated for analysis because it is connected to all the models.
+To retrieve live data, used HTTParty gem to get the response from the guardian api. The response is parsed into json format to import the data based on the hash and key values. The team has also attempted to retrieve the data from http://hdr.undp.org/en using AJAX, JSON and API keys, but the process was stgnated in bugs, so The Guardian was chosen to retrieve the data from instead for the task completion, all other attepmts were commented/cut for further development.
+
 
 **Iteration 3.	Debugging and Documentation**
 
-The project task did not require testing, so only black box testing was implemented for quality assurance. The project has got through several debugging processed, as some of the gems and packages were causing conflicts, others were not responsive/not suitable for rails. Some parts of the code were left unfinished and commented for future development. All sources are referenced in the code comments, including media files. 
+The project task did not require testing, so only black box testing was implemented for quality assurance. The project has got through several debugging processed, as some of the gems and packages were causing conflicts, others were not responsive/not suitable for rails. A lot of them were related to JSON, gems, Bootstrap of Heroku. Some parts of the code were left unfinished and commented for future development. All sources are referenced in the code comments, including media files. 
 
 SocStats was designed as a fat client application due to the advanced GUI interface, low server requirements, better multimedia performance: one of the goals was to make the data access and analysis easier for regular users, so responsiveness of the application and its high performance were prioritised. 
 
@@ -193,7 +210,11 @@ In this section the partially implemented features of the application are listed
 
 ![](readme_screenshots/highcharts.png)
 However, at the moment the highcharts display disappears on refresh and a user has to go back to reload it again.
-
+* Used Helper methods to retrieve the data from the models, due to unsolvable issues, we migrated to ActiveRecord methods and queries 
+* Download the entire data to json format. Click on download, redirects to page with json object and download option available only on reload the page. - future development
+* Exception handling 
+>(a special kind of object, an instance of the class Exception or a descendant of that class that represents some kind of >exceptional condition; it indicates that something has gone wrong. When this occurs, an exception is raised (or thrown).) 
+was partially implemented
 
 **Future potential:**
 
