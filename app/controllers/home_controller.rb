@@ -1,6 +1,3 @@
-#require 'guardian-content'
-require 'httparty'
-#require 'unirest'
 class HomeController < ApplicationController
 
   def index

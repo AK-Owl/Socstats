@@ -185,16 +185,7 @@ def results
         @hdscr << s.freedom.hf_score
     end
     
-    
-    
-    puts "----------------------------"
-
-    puts @hdindex
-    puts @me
-    puts @pfscr
-
-    puts "----------------------------"
-        
+      
     # -- analysis_Helper.rb to fetch the data from sqlite - Attempt was nearly successful before moved to activerecords
     #@data = analysisdata
 

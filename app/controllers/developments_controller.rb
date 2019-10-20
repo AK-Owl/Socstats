@@ -1,5 +1,3 @@
-require 'csv'
-require 'json'
 class DevelopmentsController < ApplicationController
   before_action :set_development, only: [:show, :edit, :update, :destroy]
 
