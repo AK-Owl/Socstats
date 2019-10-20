@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'livedata/index'
   root 'grayscale#index'
   resources :developmentbyregions
   resources :developments
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
   get 'analysis/index'
   get 'analysis/results'
   get 'grayscale/index'
+  
 
   #get 'developments/developmentanalysis'
 
