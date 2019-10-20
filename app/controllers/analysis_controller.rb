@@ -12,8 +12,7 @@ def index
     end
     @hdi = params[:human_development_index]
 end
-
-
+ 
 def results
     # fetching the selected countries
     country1 = params[:country1]
@@ -21,14 +20,6 @@ def results
     country3 = params[:country3]
     country4 = params[:country4] 
     country5 = params[:country5]
-
-    puts "----------------------------"
-
-    puts country1
-    puts country3
-
-    puts "----------------------------"
-
 
     @dev = Development.all
     @hfi = Freedom.all

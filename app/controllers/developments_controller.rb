@@ -1,3 +1,5 @@
+require 'csv'
+require 'json'
 class DevelopmentsController < ApplicationController
   before_action :set_development, only: [:show, :edit, :update, :destroy]
 
@@ -20,9 +22,9 @@ class DevelopmentsController < ApplicationController
       @devregion_gni  << index.gni_capita
       @devregion_gnindex << index.giiindex
     end
-
-  
   end
+  
+
 
   # GET /developments/1
   # GET /developments/1.json
