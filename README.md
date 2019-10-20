@@ -12,11 +12,11 @@
 The project was designed for researchers, students, analysts, human rights activists and any interested parties to ease the search and analysis processes, leaving people more time for action.
 
 ### Top-level User stories:
-*•	A User should be able to access the web app from different devices via the link: https//fathomless-chamber-89094.herokuapp.com/ 
-*•	A User should be able to navigate easily through responsive menu and analytical tools.
-*•	A User should be able to access open source and live data displayed on the website.
-*•	A User should be able to download the data available.
-*•	A User should be able to select data attributes and display the analysis results.
+*	A User should be able to access the web app from different devices via the link: https//fathomless-chamber 89094.herokuapp.com/ 
+*	A User should be able to navigate easily through responsive menu and analytical tools.
+*	A User should be able to access open source and live data displayed on the website.
+*	A User should be able to download the data available.
+*	A User should be able to select data attributes and display the analysis results.
 
 ## Ruby version
 
@@ -46,51 +46,51 @@ The project was designed for researchers, students, analysts, human rights activ
 *file: Gemfile. Node dependencies:*
 
 Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-"gem 'rails', '~> 6.0.0'"
+>gem 'rails', '~> 6.0.0'
 
 Use Puma as the app server
-"gem 'puma', '~> 3.11'"
+>gem 'puma', '~> 3.11'
 
 Use SCSS for stylesheets
-"gem 'sass-rails', '~> 5'"
+>gem 'sass-rails', '~> 5'
 
-### Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+>gem 'webpacker', '~> 4.0'
 
-### Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+>gem 'turbolinks', '~> 5'
 
-### Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+>gem 'jbuilder', '~> 2.7'
 
-### This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
-gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
+>gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
-### Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+>gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-### a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
-gem 'bootstrap-sass'
+A Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+>gem 'bootstrap-sass'
 
-### Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
-gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
+Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
+>gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
 
-### Gem for consuming restful web services dead easy
-gem 'httparty', '~> 0.17.1'
+Gem for consuming restful web services dead easy
+>gem 'httparty', '~> 0.17.1'
 
-### he CSV library provides a complete interface to CSV files and data. I
-gem 'csv', '~> 0.0.1'
+The CSV library provides a complete interface to CSV files and data. I
+>gem 'csv', '~> 0.0.1'
 
-### Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+Reduces boot times through caching; required in config/boot.rb
+>gem 'bootsnap', '>= 1.4.2', require: false
 
-## Gems that did not work out:
+**Gems that did not work out:**
 
-### Unirest is a set of lightweight HTTP libraries available in multiple languages.
-gem 'unirest', '~> 1.1', '>= 1.1.2'
+Unirest is a set of lightweight HTTP libraries available in multiple languages.
+>gem 'unirest', '~> 1.1', '>= 1.1.2'
 
-### A library for the Guardian Content API
-gem 'guardian-content'
+A library for the Guardian Content API
+>gem 'guardian-content'
 
 
 ## Installation & Configuration
@@ -100,7 +100,7 @@ gem 'guardian-content'
 2. Install Ruby, Rails and gems mentioned above. You might also need to install Bundle, NPM, Yarn and Nokogiri.
 3. In the code directory run the folllowing commands:
 
-yarn install --check-files
+```yarn install --check-files```
 
 bundle update
 
