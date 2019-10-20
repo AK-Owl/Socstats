@@ -10,24 +10,26 @@
 
 ## TARGET USERS:
 The project was designed for researchers, students, analysts, human rights activists and any interested parties to ease the search and analysis processes, leaving people more time for action.
-**Top-level User stories:**
+
+### Top-level User stories:
 *•	A User should be able to access the web app from different devices via the link: https//fathomless-chamber-89094.herokuapp.com/ 
 *•	A User should be able to navigate easily through responsive menu and analytical tools.
 *•	A User should be able to access open source and live data displayed on the website.
 *•	A User should be able to download the data available.
 *•	A User should be able to select data attributes and display the analysis results.
 
+## Ruby version
 
-**Ruby version**
+> ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 
-ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
-Rails 6.0.0
+> Rails 6.0.0
 
 **System dependencies:**
 
 *file: package.json. Node dependencies:*
 
-  "@amcharts/amcharts4": "^4.7.3",
+'''
+    "@amcharts/amcharts4": "^4.7.3",
     "@amcharts/amcharts4-geodata": "^4.1.7",
     "@fortawesome/fontawesome-free": "5.10.2",
     "@rails/actioncable": "^6.0.0-alpha",
@@ -40,12 +42,11 @@ Rails 6.0.0
     "jquery.easing": "^1.4.1",
     "leaflet": "^1.5.1",
     "turbolinks": "^5.2.0"
-
+'''
 *file: Gemfile. Node dependencies:*
 
-ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 
-### Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 
 ### Use Puma as the app server
@@ -93,43 +94,57 @@ gem 'unirest', '~> 1.1', '>= 1.1.2'
 gem 'guardian-content'
 
 
-## Configuration
+## Installation & Configuration
 
 
+1. Clone, Fork or download the code package from the master branch https://github.com/AliceOwl/Socstats.git
+2. Install Ruby, Rails and gems mentioned above. You might also need to install Bundle, NPM, Yarn and Nokogiri.
+3. In the code directory run the folllowing commands:
 
+yarn install --check-files
 
+bundle update
 
+**for database initialisation & configuration**
 
+rake db:migrate
 
-* Configuration
+rake developmentbyregion:seed_developmentbyregion
 
-* Database creation
+rake freedom:seed_freedom
 
-* Database initialization
+rake development:seed_development
 
-* How to run the test suite
+**supporting gems for application:**
 
-* Services (job queues, cache servers, search engines, etc.)
+gem install highcharts-rails 
 
-* Deployment instructions
-
-10.10.2019:
 npm install bootstrap@3
 
-Gemfile:
-# This gem provides:
-#jQuery 1, 2 and 3
-#the jQuery UJS adapter
-#assert_select_jquery to test jQuery responses in Ruby tests
-gem 'jquery-rails'
+yarn add highcharts 
 
-# a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
-gem 'bootstrap-sass'
+yarn add jquery 
 
-#app/assets/stylesheets/application.css to /application.css.scss:
+gem install amcharts-js -v 0.1.0
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+sudo apt-get install libpq-dev or sudo apt-get install postgresql
+
+## Deployment instructions
+
+To run on the local/Development environment: _rails server_ or _rails s_ from the project directory
+
+## Production Deployment: Heroku
+
+_follow the instructions on the link below:_
+https://devcenter.heroku.com/articles/getting-started-with-rails5
+
+_in database.yml change production database adapter from sqlite3 to postgresql as mentioned in the file_
+
+**attach screennshot here**
+
+
+
+
 
 #sass syntax@import for optimization of website performance by compiling the CSS into one file that is served to the browser.
 
