@@ -11,6 +11,8 @@ def index
         @dev_country2 << dev.country
     end
     @hdi = params[:human_development_index]
+    rescue ActiveRecord::RecordNotFound => error
+    print error
 end
  
 def results
@@ -184,7 +186,19 @@ def results
         @efscr << s.freedom.ef_score
         @hdscr << s.freedom.hf_score
     end
-    
+    respond_to do |format|
+        format.html
+        format.pdf do
+            render pdf: "analysis",
+            page_size: 'A4',
+            template: "analysis/results.html.erb",
+            layout: "pdf.html",
+            orientation: "Landscape",
+            lowquality: true,
+            zoom: 1,
+            dpi: 75
+        end
+    end
       
     # -- analysis_Helper.rb to fetch the data from sqlite - Attempt was nearly successful before moved to activerecords
     #@data = analysisdata

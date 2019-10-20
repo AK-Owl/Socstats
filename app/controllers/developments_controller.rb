@@ -20,6 +20,12 @@ class DevelopmentsController < ApplicationController
       @devregion_gni  << index.gni_capita
       @devregion_gnindex << index.giiindex
     end
+    # Exception Handlling
+    rescue ActiveRecord::RecordNotFound => error
+    render json: {
+      error: error.to_s
+    }, status: :not_found
+
   end
   
 

@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   def index
     # downlaod tabular data schema to JSON file
     rows = []
@@ -10,9 +9,7 @@ class HomeController < ApplicationController
     fJson = File.open("tmp/temp.json","w")
     fJson.write(json)
     fJson.close
-    send_file("#{Rails.root}/tmp/temp.json", type: "application/json", )
+    @save1 = send_file("#{Rails.root}/tmp/temp.json", type: "application/json", )
     
   end
-   
-
 end

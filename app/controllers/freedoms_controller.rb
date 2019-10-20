@@ -5,13 +5,16 @@ class FreedomsController < ApplicationController
   # GET /freedoms.json
   def index
     @freedoms = Freedom.all
+    rescue ActiveRecord::RecordNotFound => error
+    print error
   end
 
   # GET /freedoms/1
   # GET /freedoms/1.json
   def show
     @freedom = Freedom.find(params[:id])
-    
+    rescue ActiveRecord::RecordNotFound => error
+    print error
     # reference from the rails guides "https://guides.rubyonrails.org/action_controller_overview.html"
     respond_to do |pdf_format|
       pdf_format.html
