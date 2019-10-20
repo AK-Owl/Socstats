@@ -110,13 +110,13 @@ header .overlay {
                         <div class="card-body">
                             <h2 class="card-title"><%=@result["response"]["results"][i]["webTitle"]%></h2>
                             <p class="card-text"><%=@result["response"]["results"][i]["fields"]["bodyText"]%></p>
-                            <h3><a href=<%=@result["response"]["results"][i]["webUrl"]%>>>>Read More &rarr;</a></h3>
+                            <h3><a href=<%=@result["response"]["results"][i]["webUrl"]%>>Read More &rarr;</a></h3>
                         </div>
                         <div class="card-footer text-muted">
-                        Posted on ... by <a href="https://www.theguardian.com">The Guardian</a>
+                        Posted on <%=@result["response"]["results"][i]["webPublicationDate"]%> by <a href="https://www.theguardian.com">The Guardian</a>
                         </div>
                     </div>
-                <% end %>  
+                <% end %>
                 
                 <!-- End of Blog Post -->
                
