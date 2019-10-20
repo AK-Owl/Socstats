@@ -1,23 +1,31 @@
-# README
 
 # SocStats Web App
 
 ![](readme_screenshots/landing.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ABOUT THE PROJECT:
 
-Things you may want to cover:
+*SocStats project was developed by Spices team as a part of MSc Information Technology course as a scope of a bigger project in order to demonstrate team skills, technology and its potential implementation. The idea was inspired by the datasets found in Kaggle: to gather global statistics and relevant data on sociology (like Human Development Index, Human Freedom Index, etc.) in one place, where it will be regularly updated from its sources and provide the users with free data visualization and analytical tools with options to download the selected results.*
 
-* Ruby version
+
+## TARGET USERS:
+The project was designed for researchers, students, analysts, human rights activists and any interested parties to ease the search and analysis processes, leaving people more time for action.
+**Top-level User stories:**
+*•	A User should be able to access the web app from different devices via the link: https//fathomless-chamber-89094.herokuapp.com/ 
+*•	A User should be able to navigate easily through responsive menu and analytical tools.
+*•	A User should be able to access open source and live data displayed on the website.
+*•	A User should be able to download the data available.
+*•	A User should be able to select data attributes and display the analysis results.
+
+
+**Ruby version**
 
 ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
-
 Rails 6.0.0
 
-* System dependencies:
+**System dependencies:**
 
-file: package.json. Node dependencies: 
+*file: package.json. Node dependencies:*
 
   "@amcharts/amcharts4": "^4.7.3",
     "@amcharts/amcharts4-geodata": "^4.1.7",
@@ -33,42 +41,60 @@ file: package.json. Node dependencies:
     "leaflet": "^1.5.1",
     "turbolinks": "^5.2.0"
 
-file: Gemfile. Node dependencies:
+*file: Gemfile. Node dependencies:*
 
 ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+### Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 
-# Use Puma as the app server
+### Use Puma as the app server
 gem 'puma', '~> 3.11'
 
-# Use SCSS for stylesheets
+### Use SCSS for stylesheets
 gem 'sass-rails', '~> 5'
 
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+### Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+### Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+### Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
-# This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
+### This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+### Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+### a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass'
 
-# Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
+### Gem that includes Highcharts (Interactive JavaScript charts for your web projects)
 gem 'highcharts-rails', '~> 6.0', '>= 6.0.3'
 
-# Gem for consuming restful web services dead easy
+### Gem for consuming restful web services dead easy
 gem 'httparty', '~> 0.17.1'
+
+### he CSV library provides a complete interface to CSV files and data. I
+gem 'csv', '~> 0.0.1'
+
+### Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.4.2', require: false
+
+## Gems that did not work out:
+
+### Unirest is a set of lightweight HTTP libraries available in multiple languages.
+gem 'unirest', '~> 1.1', '>= 1.1.2'
+
+### A library for the Guardian Content API
+gem 'guardian-content'
+
+
+## Configuration
+
 
 
 
