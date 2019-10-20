@@ -1,10 +1,17 @@
-
 <%= @result["response"]["results"].each do |data| %>
 
-<h2>Title</h2>
-<%= data["webTitle"] %>
-<h3>Link</h3>
-<%= data["webUrl"] %>
-<h4>Info</h4>
-<%= data["fields"]["bodyText"] %>
+
+
+
+
+
+
+<h2>Title</h2> <%= data["webTitle"] %>
+<h3>Link</h3> <%= data["webUrl"] %>
+<h4>Info</h4> <%= data["fields"]["bodyText"] %>
+
+
+
+
+
 <% end %>
