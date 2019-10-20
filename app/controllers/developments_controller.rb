@@ -27,7 +27,7 @@ class DevelopmentsController < ApplicationController
   # GET /developments/1
   # GET /developments/1.json
   def show
-    @developmentbyregions = Developmentbyregion.all
+    @development = Development.find(params[:id])
   end
 
   # GET /developments/new
@@ -35,13 +35,6 @@ class DevelopmentsController < ApplicationController
     @development = Development.new
   end
 
-  def developmentanalysis
-    @development = Development.all
-   # @country1 = Development.find(params[:id1])
-    #@country2 = Development.find(params[:id2])
-
-    #POST developments/analysis
-  end
   # GET /developments/1/edit
   def edit
   end

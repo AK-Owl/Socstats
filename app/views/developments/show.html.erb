@@ -1,18 +1,19 @@
-  <header class="header_analysis">
+ <header class="header_analysis">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase"><%= @development.country%> STATS </h1>
+        <h1 class="mx-auto my-0 text-uppercase">STATS</h1>
       </div>
     </div>
   </header>
 
 <p id="notice"><%= notice %></p>
 
+
 <div id = 'stats'>  
-<table>
+<table align = "center">
   <tr>
     <th>
-    <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Ranking</h3></div>
+    <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h4>Rankings</h4></div>
     <div style="order:1;" class="Rtable-cell"><p>  <strong>Iso code:</strong> <%= @development.freedom.ISO_code %></p></div>
     <div style="order:2;" class="Rtable-cell"><p>  <strong>Region:</strong>  <%= @development.freedom.region %></p></div>
     <div style="order:3;" class="Rtable-cell"><p>  <strong>Personal Freedom Rank:</strong>  <%= @development.freedom.pf_rank %></p></div>
@@ -21,9 +22,10 @@
     <div style="order:6;" class="Rtable-cell"><p>  <strong>Human Development Rank:</strong>  <%=  @development.hdi_rank %></p></div>
     <div style="order:7;" class="Rtable-cell"><p>  <strong>Gender Inequility Rank:</strong>  <%= @development.gii_rank %></p></div>
     </th>
+    <th></th>
        
   <th>
-  <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h3>Development Stats</h3></div>
+  <div style="order:0;" class="Rtable-cell Rtable-cell--head"><h4>Development Stats</h4></div>
   <div style="order:1;" class="Rtable-cell"><p>  <strong>Freedom Quartile:</strong>  <%= @development.freedom.hf_quartile %></p></div>
   <div style="order:2;" class="Rtable-cell"><p>  <strong>Human Development Index (HDI):</strong>  <%= @development.human_development_index %></p></div>
   <div style="order:3;" class="Rtable-cell"><p>  <strong>Life expectancy at birth:</strong>  <%= @development.life_expectancy_at_birth %></p></div>
@@ -38,12 +40,18 @@
 </div>
 
 
-<div id="container" style="width:100%;height:400px;">
+<div id = "container" style="width:100%;height:400px;">
 <script type="text/javascript">
 $(function () {
-var myChart = Highcharts.chart('container',{
+var Chart = Highcharts.chart('container',{
 chart: {
+      renderTo: 'container',
+        events: {
 
+            redraw: function(event) {
+                
+            }
+        }
 },
 title: {
 text: 'Statistics'
@@ -73,6 +81,7 @@ data: [<%= raw @development.freedom.pf_rol%>, <%= raw @development.freedom.pf_ss
 
 </script>
 </div>
+<script>window.onload=function;</script>
     
 
 <strong><%= link_to 'Back', developments_path %></strong>
