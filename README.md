@@ -6,8 +6,20 @@
 
 ## ABOUT THE PROJECT:
 
-**The project is avaliable via the link: http://socstats-spices.herokuapp.com/ - automatic!**
+**The project is avaliable via the link: http://socstats-spices.herokuapp.com/**
 *SocStats project was developed by Spices team as a part of MSc Information Technology course as a scope of a bigger project in order to demonstrate team skills, technology and its potential implementation. The idea was inspired by the datasets found in Kaggle: to gather global statistics and relevant data on sociology (like Human Development Index, Human Freedom Index, etc.) in one place, where it will be regularly updated from its sources and provide the users with free data visualization and analytical tools with options to download the selected results.*
+
+
+## The Context and DataSet Sources:
+
+>**The Human Development Index (HDI)** is a summary measure of achievements in key dimensions of human development: a long and >healthy life, access to knowledge, and a decent standard of living. The HDI is the geometric mean of normalized indices for >each of the three dimensions. The health dimension is assessed by life expectancy at birth, the education dimension is >measured by mean of years of education for adults aged 25 years and more and expected years of education for children, and >the standard of living dimension is measured by gross national income per capita. The Inequality-Adjusted Human Development >Index (IHDI) adjusts the HDI for inequality in the distribution of each dimension across the population.
+
+>**The Gender Development Index (GDI)** measures gender inequalities in achievement in three basic dimensions of human >development: health, measured by female and male life expectancy at birth; education, measured by female and male expected >years of education for children and female and male mean years of education for adults ages 25 and older; and command over >economic resources, measured by female and male estimated earned income. The Gender Inequality Index (GII) reflects gender- >based disadvantage in three dimensions—reproductive health, empowerment, and the labour market—for as many countries as data >of reasonable quality allow. It shows the loss in potential human development due to inequality between female and male >achievements in these dimensions. Source: https://www.kaggle.com/undp/human-development
+
+>**The Multidimensional Poverty Index (MPI)** identifies multiple deprivations at the household level in education, health, >and standard of living as indicators of poverty. It uses micro data from household surveys, and — unlike the IHDI — all the >indicators needed to construct the measure must come from the same survey.
+
+>**The Human Freedom Index** measures economic freedoms such as the freedom to trade or to use sound money, and it captures >the degree to which people are free to enjoy the major freedoms often referred to as civil liberties—freedom of speech, >religion, association, and assembly— in the countries in the survey. In addition, it includes indicators on rule of law, >crime and violence, freedom of movement, and legal discrimination against same-sex relationships. Source: https://www.kaggle.com/gsutters/the-human-freedom-index
+
 
 
 ## TARGET USERS:
@@ -22,9 +34,9 @@ The project was designed for researchers, students, analysts, human rights activ
 
 ## Ruby version
 
-"ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]"
+```ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]```
 
-"Rails 6.0.0"
+```Rails 6.0.0```
 
 **System dependencies:**
 
