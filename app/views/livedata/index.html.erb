@@ -1,14 +1,140 @@
+  <!-- <header class="header_data">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Live Data</h1>
+      </div>
+    </div>
+  </header> -->
 
-<%= @result["response"]["results"].each do |data| %>
+<head>
 
-<h2>Title</h2>
-<%= data["webTitle"] %>
-<h3>Link</h3>
-<%= data["webUrl"] %>
-<h4>Info</h4>
-<%= data["fields"]["bodyText"] %>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+
+</head>
+
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+   <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Live Data</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+.col-md-8 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 85%;
+    max-width: 85%;
+}
+</style>
 
 
 
+<body>
+<section class="my-5">
 
-<% end %>
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <!-- Page Content -->
+        <div class="container">
+            <!-- inner row -->
+            <div class="row"> 
+                <!-- Blog Entries Column -->
+                <div class="col-md-8">
+                <h1 class="my-4">Live Data</h1>
+                <p>This section contains complimentary articles, received from The Guardian and aims to provide users with additional information on the Human Development and Human Freedom topics to support the oper source data provided.</p>
+        
+                 <!-- Blog Post -->
+                <%= @result["response"]["results"].each do |data| %>
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://mumbrella.com.au/wp-content/uploads/2017/04/The-Guardian.png" alt="Card image cap"> <!-- The Guardian logo from https://www.google.com/imgres?imgurl=https%3A%2F%2Fmumbrella.com.au%2Fwp-content%2Fuploads%2F2017%2F04%2FThe-Guardian.png&imgrefurl=https%3A%2F%2Fmumbrella.com.au%2Fguardian-ceases-publishing-apple-news-facebook-instant-articles-440249&docid=LjCubqeSnpK4XM&tbnid=OtB-Xj5aziC19M%3A&w=830&h=346&safe=strict&client=firefox-b-d&q=the%20guardian%20header&iact=mrc-->
+                        <div class="card-body">
+                            <h2 class="card-title"><%= data["webTitle"] %></h2>
+                            <p class="card-text"><%= data["fields"]["bodyText"] %></p>
+                            <h3><a href=<%= data["webUrl"] %>>Read More &rarr;</a></h3>
+                        </div>
+                        <div class="card-footer text-muted">
+                        Posted on ... by <a href="https://www.theguardian.com">The Guardian</a>
+                        </div>
+                    </div>
+                <% end %>  
+                
+                <!-- End of Blog Post -->
+               
+                </div> 
+                <!-- End of Blog Entries Column -->
+             </div>
+             <!-- End of inner row -->
+        </div>
+        <!-- End of page content -->
+    </div>
+    <!--end of col-md-8 mx-auto -->
+</div>
+<!--end of outside row -->
+
+</section>
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
