@@ -1,0 +1,698 @@
+commit be4422784cf6873b1abc96ae347efa1152c67005
+Merge: fce246e 8461631
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 23:20:20 2019 +0100
+
+    update
+
+commit fce246e6dd3f41c8b32409e0f2c1aef94af811c7
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 23:06:03 2019 +0100
+
+    last min updates
+
+commit 84616312e067887fb518a19ef9685f16aad26492
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 22:22:43 2019 +0100
+
+    Update README.md
+
+commit 7833b0a4b49c19d82f7bef735599c47af41623cd
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 22:19:41 2019 +0100
+
+    Update README.md
+
+commit 92f6adc7db0ca9e6633583d8817506764c7595d6
+Merge: 8f19df0 ae6f174
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 22:15:38 2019 +0100
+
+    Merge pull request #5 from AliceOwl/alicenew
+    
+    img for readme added
+
+commit ae6f174c80e9468b94a34994fc265ce84854afde
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 22:13:16 2019 +0100
+
+    img for readme added
+
+commit 8f19df0d65142c5a918b07504b9f402f46967105
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 22:12:37 2019 +0100
+
+    Update README.md
+
+commit 0156718fba23496f4e18ef3c5bf5c588776a5a5c
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 21:33:49 2019 +0100
+
+    Update README.md
+
+commit 6a50ea6e3b5064372028722bc8d0c08b4684e41e
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:54:13 2019 +0100
+
+    Update README.md
+
+commit 1e5862fa5f50bd8f9a26e0059f1148b63e28b516
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:43:34 2019 +0100
+
+    Update README.md
+
+commit 582413eaf0802aa11401d1fa22e8e2b5c7931beb
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:38:38 2019 +0100
+
+    Update README.md
+
+commit 0b23a27c06808906310cfe34743425a18b7a404e
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:35:18 2019 +0100
+
+    Update README.md
+
+commit d9a8991ca82dcacec19cbfd8dbba6bb2f9b88aa3
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:30:14 2019 +0100
+
+    Update README.md
+
+commit c1126d200fffbdc4a90331919602436fbed31c29
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:29:00 2019 +0100
+
+    Update README.md
+
+commit 160cfaf7ffab1ccdb92ae538c95acc84d079eab8
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:27:30 2019 +0100
+
+    Update README.md
+
+commit 2071e1b1dfef74b92237a1cef67142d00f2962c4
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:26:55 2019 +0100
+
+    Update README.md
+
+commit d3594ce42d005f1d37997aa93c31c4d9ba328a77
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 20:00:11 2019 +0100
+
+    Update README.md
+
+commit 664b9928b04eea274b89f6210531be269fed7bfe
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 19:46:34 2019 +0100
+
+    Update README.md
+
+commit f8072543f59e1afea343ce021db254932804af31
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 19:46:07 2019 +0100
+
+    Update README.md
+
+commit e2356b74bfdd18b5be7c2ae1de081dba5429c676
+Merge: fa4c813 35bbac7
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sun Oct 20 19:44:35 2019 +0100
+
+    Merge pull request #4 from AliceOwl/alicenew
+    
+    Alicenew
+
+commit 35bbac739ef7e0cb5a58fa042c0c126169196d3b
+Merge: 647e46d fa4c813
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 19:39:30 2019 +0100
+
+    update for readme
+
+commit 647e46d29680dedb902b263112f540424d31f8f8
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 19:37:47 2019 +0100
+
+    minor changes in files
+
+commit fa4c8132bc9e6851461b8de0e304a6f735924763
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 19:33:15 2019 +0100
+
+    Json save - partially working
+
+commit 055bd4750b8a67164cc4012f6e005c25efb0a0d4
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 19:22:49 2019 +0100
+
+    screenshots for readme added
+
+commit 2dea2b57635e20e63e711917154f863997d38073
+Merge: f79794d 91d4624
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 19:10:44 2019 +0100
+
+    livedata.index updated'
+
+commit f79794dcc3df5085d34451c997168c941b67ebc1
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 18:45:12 2019 +0100
+
+    landing page settings edited
+
+commit 91d4624e7f5e493c68f8f80b98dca28e55031b87
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 16:17:16 2019 +0100
+
+    Live data update before heroku push
+
+commit 7edc55e3eea7176cdf0eda29bb4a1c762d7748e5
+Merge: 7f5d916 e1b1ca1
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 16:09:37 2019 +0100
+
+    Live data update before heroku push
+
+commit 7f5d9162b60d2ae003f8345ac0360183cc536d19
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 15:22:42 2019 +0100
+
+    Livedata changes
+
+commit e1b1ca13f1707c916b388b4d16aa4a5f2108cff6
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 15:16:50 2019 +0100
+
+    signup forms removed
+
+commit f01d871f545dd5348867d39b8570a4cacc4ee5ad
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 15:10:58 2019 +0100
+
+    fetched data wrapped with bootstrap
+
+commit 05213e10647e30ffe0a60fd88d55dff76952e8e9
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 14:29:38 2019 +0100
+
+    json downlad files - under development
+
+commit f28a51488208da53981cd0506deeae115983d76a
+Merge: 2e5443c 3fb8d02
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 11:51:08 2019 +0100
+
+    alicenew merged with master
+
+commit 3ade9b5c597ea21d4cf91066f6155fa2dabf561f
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 11:32:05 2019 +0100
+
+    livedata views update
+
+commit 2e5443cd5dbc4cd33959183edc8b595eba7fad0d
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 11:29:42 2019 +0100
+
+    images referenced in comments (grayscale_custom.css & grayscale_index.css)
+
+commit 3fb8d02a66168a4b433361a391508dd4d26fd2e2
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 20 11:22:28 2019 +0100
+
+    livedata update
+
+commit e988a1d69e849bc48f2f92167aa6579bdd213f61
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sun Oct 20 10:28:11 2019 +0100
+
+    API fetching the data from the Guardian attempt
+
+commit d56dcccb219b74f139f5f22aad002f54f5ad5c11
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:39:34 2019 +0100
+
+    .yml changed for dev
+
+commit 648a4c0f13cd46b45dc89de98b1cc9dd9dbb840a
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:28:32 2019 +0100
+
+    images fixed local, test on heroku now
+
+commit 6fc60c66f89680530d2814c41f166b34f6658e2a
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:28:08 2019 +0100
+
+    images fixed local, test on heroku now
+
+commit ae04bd8787496148ff554f096ec00a92719a9fdd
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:16:25 2019 +0100
+
+    heruko bug fixes
+
+commit e31dc7371a4ed18ea9618cdb724cdeb6cc9aba06
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:15:06 2019 +0100
+
+    production.rb chnaged for image issues
+
+commit 54b7511099a746912ffa1a1df18d7233b5d0ed28
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 21:09:26 2019 +0100
+
+    layout fixes
+
+commit 2012cf10676c8539abca804bd6727a36c1ae4a4b
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 20:58:55 2019 +0100
+
+    layouts bug fixes
+
+commit 54bfe33bcf9a469b139b0a9aafd28e306926e549
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 20:20:55 2019 +0100
+
+    Bootstrap link changed
+
+commit 99c421d686b874a382ff75d17b9590f5fdb2c0ad
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 20:17:07 2019 +0100
+
+    Routes update
+
+commit ba7304efd40d00e35bd13754c8999c96afe0fa30
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 20:07:45 2019 +0100
+
+    root changed in routes.rb
+
+commit 13981dcc8a669ce44cc37ee8d980b55f6213a256
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 19:55:13 2019 +0100
+
+    database.yml update
+
+commit 3d7effceb9ee8c5067cb96b6a0e99ff62e97690b
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 19:38:41 2019 +0100
+
+    database.yml edited
+
+commit c2a12d6672c7dad92961d90018f1c68888bf5591
+Merge: 7dde8da 09ca920
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 19:15:47 2019 +0100
+
+    Merge branch 'master' of https://github.com/AliceOwl/Socstats
+
+commit 7dde8dad411087b1e395ed100bcee5dbc79c3524
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 19:15:30 2019 +0100
+
+    database.yml file update for heroku deployement
+
+commit 09ca9200b9b28aeee45fb09e1c689037becf40b2
+Merge: 932cf8f b8f3372
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Sat Oct 19 19:13:08 2019 +0100
+
+    Merge pull request #3 from AliceOwl/alicenew
+    
+    Alicenew & Karthiknew merged. charts updated.
+
+commit b8f3372666a1b6bb9eec87906de06a73f163c77e
+Merge: 062e639 7e4dbb3
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sat Oct 19 19:11:22 2019 +0100
+
+    alicenew and karthiknew merged
+
+commit 062e63962e8868603368add4f3abd4f2294951c9
+Merge: 88451e5 709ca3d
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sat Oct 19 18:43:45 2019 +0100
+
+    update from alicenew
+
+commit 88451e564f2f0937be2281ef27be8601f732130b
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Sat Oct 19 18:39:12 2019 +0100
+
+    update before merging
+
+commit 7e4dbb3b931c002eff3a02e89f2d5952d0a99af8
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 17:27:47 2019 +0100
+
+    Charts themes update
+
+commit a65fbf9934f823638e225f10461e51b66794ff68
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 17:12:45 2019 +0100
+
+    Charts fixed
+
+commit b8785b489c06428deee330a50d35b3c0df50abde
+Merge: 932cf8f 9c53ed6
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 15:34:06 2019 +0100
+
+    Yes, Merge branch 'karthiknew'
+
+commit 9c53ed6d547227bf5fb4448a2ad911fb684b49f3
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 15:32:37 2019 +0100
+
+    reports/charts under development
+
+commit 4b649de4952dedcb5ca59453c9796da6ee0c96d4
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 14:14:37 2019 +0100
+
+    Charts update
+
+commit d50a3ff8a69387cb13e966414857a439a4203d88
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 11:58:09 2019 +0100
+
+    Analysis results: one chart created
+
+commit 963dc873eb1f6ebec634a85fbb0a790d6e38d3e4
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 01:37:51 2019 +0100
+
+    test commit
+
+commit 709ca3d0cbe5b2d05a2f8ac11600660471a3cf03
+Merge: d94b64c 09e1a2d
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 01:21:59 2019 +0100
+
+    update commit
+    Merge branch 'alicenew' of https://github.com/AliceOwl/Socstats into alicenew
+
+commit d94b64ccb9164e25e7360f64f7daaa71814d3353
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 19 01:16:06 2019 +0100
+
+    data analysis controller fixed
+
+commit 09e1a2d1b5fc3fbacf9bc0be10d1f2884e677a53
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Fri Oct 18 14:41:43 2019 +0100
+
+    update before graphs experimenting
+
+commit f5af444fcfc4f081fae36c772ebbe42bcbe15a03
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Fri Oct 18 13:34:17 2019 +0100
+
+    analysis under testig with sql queries - not working statge
+
+commit 932cf8fd30261d35181a0e1f7bc964e305c21f27
+Merge: fbacefd 0acef91
+Author: AK_Owl <47109097+AliceOwl@users.noreply.github.com>
+Date:   Fri Oct 18 10:55:27 2019 +0100
+
+    Merge pull request #2 from AliceOwl/alicenew
+    
+    Alicenew
+
+commit 0acef912c324ee77034e99eddeaa3261fec2ccd7
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Fri Oct 18 10:39:50 2019 +0100
+
+    headers fixed
+
+commit 3771d4d8ca65aca0d40eeb02e5c937d0688fefe0
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Fri Oct 18 10:15:17 2019 +0100
+
+    fetching db data: empty string
+
+commit 462428310c910e2f6aa432e92275c3fcf58698fb
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Fri Oct 18 05:56:26 2019 +0100
+
+    fetching is working
+
+commit 326777d4d98b855e83d846caa4d50dd3325a7cdd
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Fri Oct 18 03:48:48 2019 +0100
+
+    update before experiment with controllers
+
+commit 7659774be9d54d655a8d4f828f9ef338374a8bdf
+Merge: bc4dc77 e3fbca0
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Thu Oct 17 15:17:22 2019 +0100
+
+    developmentbyregions page merged with developments page (graph), data analysis page not working
+
+commit bc4dc77bfacc1feb50f3eb4bd55f8634cc50f8a8
+Author: AliceOwl <a.kvaratskheliia.18@aberdeen.ac.uk>
+Date:   Wed Oct 16 23:36:15 2019 +0100
+
+    developments: table fixed, button removed, navbar fixed (row div removed)
+
+commit e3fbca0d29507f387ba38d416b394e6beae2c6bf
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Wed Oct 16 23:19:42 2019 +0100
+
+    analysis - working in progress
+
+commit 4e8fbada782fb757ed5f935f3ae83a5f89e0d350
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 16:39:45 2019 +0100
+
+    ddevelopments: data references below the table fixed
+
+commit b6bdcde757b06a267c4814e61c988c5a6617bbcc
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 16:24:33 2019 +0100
+
+    landing page update
+
+commit 1494e6db3d68e0a728247a06ae6e56db157b0dc7
+Merge: 745666a b59e595
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Wed Oct 16 16:11:57 2019 +0100
+
+    merging updateMerge branch 'integration_test' of https://github.com/AliceOwl/Socstats into karthik
+
+commit 745666a9530247a1d2f08f8248e2ef6861e058e7
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Wed Oct 16 16:10:23 2019 +0100
+
+    data analysis in progress
+
+commit 624c5daf4f66c40b2425958013eaf6bf9a6554eb
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 15:10:32 2019 +0100
+
+    footer update
+
+commit 4656c30e3e93754cd42f1f471df978a0928082a3
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 15:09:33 2019 +0100
+
+    footer/signup update
+
+commit b59e595fde17d1187cdc97d53eb19a188e4c494f
+Merge: cfb94c8 cfa54b7
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 14:29:39 2019 +0100
+
+    alicenew and karthik branches merged, developments: header/navbar is broken, stats disappear on refreshing
+
+commit cfb94c8988fb8ad4c906a5154ce6e7087b0af893
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 14:15:41 2019 +0100
+
+    maps updated: references added
+
+commit db28c14782e34fb214d47151d5a2d8b744436c9f
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 04:13:08 2019 +0100
+
+    maps renewed
+
+commit cfa54b712977c24fdb8067f1e916183a26dedf4d
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Wed Oct 16 02:17:50 2019 +0100
+
+    fixed minor issues
+
+commit 58a9a82b9c036955a3c66249818a6b775848001c
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 16 01:23:56 2019 +0100
+
+    css file compiled, background changed, header distributed through layouts (application), navbar fixed
+
+commit 55cda78d0af0f71e63f7cc1622d51e01f765694d
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Tue Oct 15 23:54:16 2019 +0100
+
+    analysis page fixed. assets precompiled. routes/links, navbar and containers to be fixed
+
+commit bf200b5d2ad8e698739ed5bee9ef8a4315da50cc
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Tue Oct 15 23:04:37 2019 +0100
+
+    Analysis moved to development views
+
+commit 6e1057d3b8f6fa7a13ea4a743f57005dd711884e
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Tue Oct 15 21:08:14 2019 +0100
+
+    bootstrap integration. Home page working, analysis throws an error: back up files before attempt to precompile
+
+commit 1afd839f78530b3d627fa0f11c81c619396a9657
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Tue Oct 15 18:19:11 2019 +0100
+
+    maps added to the home page
+
+commit f17de80537af2780a55c1b13e730cce071fbea9d
+Merge: aa5125f f77d376
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Tue Oct 15 12:50:02 2019 +0100
+
+    Merge branch 'master' into karthik
+
+commit aa5125f1d790a2a65c0602f7586b106f17617fa7
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Mon Oct 14 21:36:30 2019 +0100
+
+    reverting
+
+commit f77d3769f8fcd7b2db5dacaa797b1095571ee18d
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Tue Oct 15 12:00:51 2019 +0100
+
+    rendering forms for data analysis
+
+commit 1d640ce44794da7701de2cbc9e53ef0be9109202
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Mon Oct 14 21:36:30 2019 +0100
+
+    conflict between links on grayscale/analysis pages fixed. Navbar to be fixed.
+
+commit 0872a933279da46aee98f8c782d757dd0fe97785
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Mon Oct 14 19:35:13 2019 +0100
+
+    Map & charts work in progress
+
+commit 659cf6e2967b3ea55ea338a05b76baf9ae259642
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 13 23:10:58 2019 +0100
+
+    tables updated (Data Analysis)
+
+commit 40c76278e08716d71d957a194ed5cb71f6fae8e6
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 13 19:28:54 2019 +0100
+
+    new logic try & implemenation - half done
+
+commit b79922f3e4224345a29d369329bcf1489e372d81
+Merge: 259e576 fbacefd
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sun Oct 13 13:27:49 2019 +0100
+
+    Graphs and Charts added
+
+commit 259e5763aa0563aec8ff12d818c008612c8106ed
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Sat Oct 12 21:50:37 2019 +0100
+
+    DB update
+
+commit fbacefd050f6b7fb0cd3e94ed7594eabd3a8676d
+Merge: fd4cfc0 12c6fa6
+Author: Karthik Karanam <46694097+t17sk18@users.noreply.github.com>
+Date:   Fri Oct 11 15:35:24 2019 +0100
+
+    Merge pull request #1 from AliceOwl/alice
+    
+    Confirmed
+
+commit 12c6fa6ab09b57f243ff7b51bf2a4eedf94ca2b5
+Merge: 72a2826 94f74c7
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Fri Oct 11 15:31:38 2019 +0100
+
+    karthik's update merged
+
+commit 72a2826e76e1e0951af57d4d8b408aeb1bf5a7ba
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Fri Oct 11 14:56:20 2019 +0100
+
+    analysis controller created
+
+commit 94f74c7228244f1a1e8504efb8d5d7ba69534bb8
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Fri Oct 11 14:33:53 2019 +0100
+
+    Gemfile update with pg
+
+commit 89a05d220155586d6c3843c1e4d0717556b43373
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Fri Oct 11 09:56:53 2019 +0100
+
+    update before service
+
+commit ee3dda88477b7ca9966eeb408b33d9ee79f26848
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Fri Oct 11 09:51:58 2019 +0100
+
+    Scaffolding updates
+
+commit 3460891caeefcfe678885d657a8f76bcb50d04b9
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Fri Oct 11 08:46:24 2019 +0100
+
+    Scaffolding and seeding
+
+commit 3d2e77f8fdf37a259665a0302e94363f9a2556a6
+Merge: fd4cfc0 f87d59a
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Thu Oct 10 22:53:07 2019 +0100
+
+    merged, landing page update
+
+commit fd4cfc0cd11da6e89195288536c2a69d14c4e331
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Thu Oct 10 22:20:01 2019 +0100
+
+    update
+
+commit f87d59aebd1bb76be1fbc30c36ccde695851c36f
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Thu Oct 10 22:11:37 2019 +0100
+
+    CSV parsing stage 1 done
+
+commit 6f0697ec8e0f54b209c382b56d74c939f5475c0e
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Thu Oct 10 21:50:42 2019 +0100
+
+    bootstrap template added, readme edited
+
+commit 3667e930f0118b758ef75fd2aa58608888078ce2
+Author: t17sk18 <s.karanam.18@abdn.ac.uk>
+Date:   Thu Oct 10 00:08:13 2019 +0100
+
+    second commit, testing git
+
+commit 1ea9da709ee0eb290d5ac1721ba98cd86190af14
+Author: AliceOwl <a.kvaratskheliia.18@abdn.ac.uk>
+Date:   Wed Oct 9 22:56:42 2019 +0100
+
+    first commit, home page created
