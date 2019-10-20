@@ -20,9 +20,9 @@ The project was designed for researchers, students, analysts, human rights activ
 
 ## Ruby version
 
-> ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
+"ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]"
 
-> Rails 6.0.0
+"Rails 6.0.0"
 
 **System dependencies:**
 
@@ -45,15 +45,13 @@ The project was designed for researchers, students, analysts, human rights activ
 
 *file: Gemfile. Node dependencies:*
 
-
 Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.0'
+"gem 'rails', '~> 6.0.0'"
 
-### Use Puma as the app server
-gem 'puma', '~> 3.11'
-
-### Use SCSS for stylesheets
-gem 'sass-rails', '~> 5'
+Use Puma as the app server
+"gem 'puma', '~> 3.11'"
+Use SCSS for stylesheets
+"gem 'sass-rails', '~> 5'"
 
 ### Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
