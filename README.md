@@ -28,7 +28,7 @@ The project was designed for researchers, students, analysts, human rights activ
 
 *file: package.json. Node dependencies:*
 
-'''
+
     "@amcharts/amcharts4": "^4.7.3",
     "@amcharts/amcharts4-geodata": "^4.1.7",
     "@fortawesome/fontawesome-free": "5.10.2",
@@ -42,7 +42,7 @@ The project was designed for researchers, students, analysts, human rights activ
     "jquery.easing": "^1.4.1",
     "leaflet": "^1.5.1",
     "turbolinks": "^5.2.0"
-'''
+
 *file: Gemfile. Node dependencies:*
 
 
