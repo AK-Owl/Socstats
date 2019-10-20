@@ -1,4 +1,3 @@
-
 # SocStats Web App
 
 ![](readme_screenshots/landing.png)
