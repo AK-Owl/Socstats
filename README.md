@@ -91,7 +91,7 @@ Gem that includes Highcharts (Interactive JavaScript charts for your web project
 Gem for consuming restful web services dead easy
 ```gem 'httparty', '~> 0.17.1'```
 
-The CSV library provides a complete interface to CSV files and data. I
+The CSV library provides a complete interface to CSV files and data. 
 ```gem 'csv', '~> 0.0.1'```
 
 Reduces boot times through caching; required in config/boot.rb
@@ -175,21 +175,25 @@ Bootstrap templates and themes were implemented for GUI (for optimization of dev
 >CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that >each time you use @import in CSS it creates another HTTP request. Sass builds on top of the current CSS @import but instead >of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing >into so you can serve a single CSS file to the web browser. Source: https://sass-lang.com/guide
 The template integration process caused a number of bugs that have been continiously fixed throughout the project.
 
-DataWrapper, Amcharts and Highcharts were embedded for data visualization enhance the learning experience and build up on it in future development. Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
+DataWrapper, Amcharts and Highcharts were embedded for data visualization enhance the learning experience and build up on it in future development. 
+
+![](readme_screenshots/map.png)
+
+Heroku for deployment of the application. Heroku required PostgreSQL as a database adapter for deployment, so it has been switching throughout the project.
+![](readme_screenshots/config_yml.png)
 
 **User Sotries by page**
 
-Home page: A User is able to access the main page, interactive global map, information about the app and contact details. 
-Open Data: A User is able to access the dataset, search by country, access detailed information by country and interactive Highcharts for general analysis of the data. 
-Data Analysis: A User is able to select countries (up to 5) to get data analysis (visualisation in graphs) for the countries selected - redirected to the results page. 
-Live Data: A User is able to access live data (articles) from the Guardian as a complimentary information sourse relevant to the research topic. 
-
-
-
-# INSERT A SCREENSHOT HERE
+* Home page: A User is able to access the main page, interactive global map, information about the app and contact details. 
+* Open Data: A User is able to access the dataset, search by country, access detailed information by country and interactive  * Highcharts for general analysis of the data. 
+* Data Analysis: A User is able to select countries (up to 5) to get data analysis (visualisation in graphs) for the countries selected - redirected to the results page. 
+* Live Data: A User is able to access live data (articles) from the Guardian as a complimentary information sourse relevant to the research topic. 
 
 Another controller/view was generated for analysis because it is connected to all the models.
 To retrieve live data, used HTTParty gem to get the response from the guardian api. The response is parsed into json format to import the data based on the hash and key values. The team has also attempted to retrieve the data from http://hdr.undp.org/en using AJAX, JSON and API keys, but the process was stgnated in bugs, so The Guardian was chosen to retrieve the data from instead for the task completion, all other attepmts were commented/cut for further development.
+
+
+![](readme_screenshots/livedata.png)
 
 
 **Iteration 3.	Debugging and Documentation**
